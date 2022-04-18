@@ -1,4 +1,4 @@
-<?php
+<?php 
 $GLOBALS['titlePage'] = "Unahub";
 $GLOBALS['classBody'] = "tpl-homepage";
 include 'header.php'; ?>
