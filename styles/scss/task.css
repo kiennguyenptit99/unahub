@@ -1,0 +1,1095 @@
+.header-2 .nav-sub__menu li a, .section__handoffcustomlink__customlink__content .button__interlink span,
+.section__handoffcustomlink__customlink__content .button__interlink a, .section__handoffcustomlink__customlink__content .button__interlink {
+  transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+}
+
+.header-2 .nav__item > a, .header-2 .nav__list {
+  display: flex;
+}
+
+.section__handoffcustomlink__customlink__content .button__interlink {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background: #022d4d;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:after, .section__handoffcustomlink__customlink__content .button__interlink:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 50%;
+  width: 0;
+  background: #005391;
+  opacity: 0.6;
+  transition: width 0.3s ease-in-out;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:before {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.section__handoffcustomlink__customlink__content .button__interlink span,
+.section__handoffcustomlink__customlink__content .button__interlink a {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  padding: 10px 30px;
+  display: block;
+  color: #fff;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:hover span {
+  color: #fff;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:hover:after, .section__handoffcustomlink__customlink__content .button__interlink:hover:before {
+  width: 100%;
+}
+
+.section__titlepage {
+  margin: 40px 0;
+}
+.section__titlepage span {
+  font-size: 4rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  color: #000;
+  border-bottom: 5px solid #88a6b5;
+}
+@media (max-width: 1200px) {
+  .section__titlepage {
+    margin-bottom: 3rem;
+  }
+  .section__titlepage span {
+    font-size: 3rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+@media (max-width: 768px) {
+  .section__titlepage {
+    margin-bottom: 2.6rem;
+  }
+  .section__titlepage span {
+    font-size: 2.4rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+
+.section__handoffcustomlink__customlink__content, .section__handoffcustomlink__handoff__content, .section__members__content, .section__projects__content, .boxarchives__content, .section__statistics__archives .boxstatistics__content, .section__tasksmeeting__contentboxmeetings, .section__tasksmeeting__contenttaskstoday, .section__tasksmeeting .meetings--content {
+  border: 1px #88a6b5 solid;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+.section__handoffcustomlink__customlink__content .title_box, .section__handoffcustomlink__handoff__content .title_box, .section__members__content .title_box, .section__projects__content .title_box, .boxarchives__content .title_box, .section__statistics__archives .boxstatistics__content .title_box, .section__tasksmeeting__contentboxmeetings .title_box, .section__tasksmeeting__contenttaskstoday .title_box, .section__tasksmeeting .meetings--content .title_box {
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.section__handoffcustomlink__customlink__content .buttonViewAll, .section__handoffcustomlink__handoff__content .buttonViewAll, .section__members__content .buttonViewAll, .section__projects__content .buttonViewAll, .boxarchives__content .buttonViewAll, .section__statistics__archives .boxstatistics__content .buttonViewAll, .section__tasksmeeting__contentboxmeetings .buttonViewAll, .section__tasksmeeting__contenttaskstoday .buttonViewAll, .section__tasksmeeting .meetings--content .buttonViewAll {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+.section__handoffcustomlink__customlink__content .buttonViewAll:hover, .section__handoffcustomlink__handoff__content .buttonViewAll:hover, .section__members__content .buttonViewAll:hover, .section__projects__content .buttonViewAll:hover, .boxarchives__content .buttonViewAll:hover, .section__statistics__archives .boxstatistics__content .buttonViewAll:hover, .section__tasksmeeting__contentboxmeetings .buttonViewAll:hover, .section__tasksmeeting__contenttaskstoday .buttonViewAll:hover, .section__tasksmeeting .meetings--content .buttonViewAll:hover {
+  color: #cfaa40;
+}
+.section__handoffcustomlink__customlink__content .buttonViewAll i, .section__handoffcustomlink__handoff__content .buttonViewAll i, .section__members__content .buttonViewAll i, .section__projects__content .buttonViewAll i, .boxarchives__content .buttonViewAll i, .section__statistics__archives .boxstatistics__content .buttonViewAll i, .section__tasksmeeting__contentboxmeetings .buttonViewAll i, .section__tasksmeeting__contenttaskstoday .buttonViewAll i, .section__tasksmeeting .meetings--content .buttonViewAll i {
+  color: #cfaa40;
+}
+@media (max-width: 480px) {
+  .section__handoffcustomlink__customlink__content .title_box, .section__handoffcustomlink__handoff__content .title_box, .section__members__content .title_box, .section__projects__content .title_box, .boxarchives__content .title_box, .section__statistics__archives .boxstatistics__content .title_box, .section__tasksmeeting__contentboxmeetings .title_box, .section__tasksmeeting__contenttaskstoday .title_box, .section__tasksmeeting .meetings--content .title_box {
+    font-size: 1.8rem;
+  }
+  .section__handoffcustomlink__customlink__content .buttonViewAll, .section__handoffcustomlink__handoff__content .buttonViewAll, .section__members__content .buttonViewAll, .section__projects__content .buttonViewAll, .boxarchives__content .buttonViewAll, .section__statistics__archives .boxstatistics__content .buttonViewAll, .section__tasksmeeting__contentboxmeetings .buttonViewAll, .section__tasksmeeting__contenttaskstoday .buttonViewAll, .section__tasksmeeting .meetings--content .buttonViewAll {
+    font-size: 12px !important;
+  }
+  .section__handoffcustomlink__customlink__content .buttonViewAll i, .section__handoffcustomlink__handoff__content .buttonViewAll i, .section__members__content .buttonViewAll i, .section__projects__content .buttonViewAll i, .boxarchives__content .buttonViewAll i, .section__statistics__archives .boxstatistics__content .buttonViewAll i, .section__tasksmeeting__contentboxmeetings .buttonViewAll i, .section__tasksmeeting__contenttaskstoday .buttonViewAll i, .section__tasksmeeting .meetings--content .buttonViewAll i {
+    font-size: 11px;
+  }
+}
+
+.section__tasksmeeting .meetings__item {
+  display: flex;
+  margin-top: 20px;
+}
+.section__tasksmeeting .meetings__item .time__meeting {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #022d4d;
+}
+.section__tasksmeeting .meetings__item--content {
+  width: calc(100% - 94px);
+  margin-left: 30px;
+  background: #022d4d;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+}
+.section__tasksmeeting .meetings__item--right {
+  text-align: right;
+}
+.section__tasksmeeting .meetings__item--left {
+  width: calc(100% - 90px);
+}
+.section__tasksmeeting .meetings__item--left h3 {
+  font-size: 1.7rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.section__tasksmeeting .meetings__item--left p {
+  margin-bottom: 7px;
+}
+.section__tasksmeeting .meetings__item--left p a {
+  font-size: 1.4rem;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.section__members__item .buttonstatus, .section__projects__item .buttonstatus {
+  width: 70px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #cfaa40;
+  color: #fff;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+/*Mixin Responsive*/
+.header-2 .nav-sub__menu li a, .section__handoffcustomlink__customlink__content .button__interlink, .section__handoffcustomlink__customlink__content .button__interlink span,
+.section__handoffcustomlink__customlink__content .button__interlink a {
+  transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+}
+
+.header-2 .nav__item > a, .header-2 .nav__list {
+  display: flex;
+}
+
+.section__handoffcustomlink__customlink__content .button__interlink {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background: #022d4d;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:after, .section__handoffcustomlink__customlink__content .button__interlink:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 50%;
+  width: 0;
+  background: #005391;
+  opacity: 0.6;
+  transition: width 0.3s ease-in-out;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:before {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.section__handoffcustomlink__customlink__content .button__interlink span,
+.section__handoffcustomlink__customlink__content .button__interlink a {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  padding: 10px 30px;
+  display: block;
+  color: #fff;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:hover span {
+  color: #fff;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:hover:after, .section__handoffcustomlink__customlink__content .button__interlink:hover:before {
+  width: 100%;
+}
+
+.section__titlepage {
+  margin: 40px 0;
+}
+.section__titlepage span {
+  font-size: 4rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  color: #000;
+  border-bottom: 5px solid #88a6b5;
+}
+@media (max-width: 1200px) {
+  .section__titlepage {
+    margin-bottom: 3rem;
+  }
+  .section__titlepage span {
+    font-size: 3rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+@media (max-width: 768px) {
+  .section__titlepage {
+    margin-bottom: 2.6rem;
+  }
+  .section__titlepage span {
+    font-size: 2.4rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+
+.section__handoffcustomlink__customlink__content, .section__handoffcustomlink__handoff__content, .section__members__content, .section__projects__content, .boxarchives__content, .section__statistics__archives .boxstatistics__content, .section__tasksmeeting__contentboxmeetings, .section__tasksmeeting__contenttaskstoday, .section__tasksmeeting .meetings--content {
+  border: 1px #88a6b5 solid;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+.section__handoffcustomlink__customlink__content .title_box, .section__handoffcustomlink__handoff__content .title_box, .section__members__content .title_box, .section__projects__content .title_box, .boxarchives__content .title_box, .section__statistics__archives .boxstatistics__content .title_box, .section__tasksmeeting__contentboxmeetings .title_box, .section__tasksmeeting__contenttaskstoday .title_box, .section__tasksmeeting .meetings--content .title_box {
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.section__handoffcustomlink__customlink__content .buttonViewAll, .section__handoffcustomlink__handoff__content .buttonViewAll, .section__members__content .buttonViewAll, .section__projects__content .buttonViewAll, .boxarchives__content .buttonViewAll, .section__statistics__archives .boxstatistics__content .buttonViewAll, .section__tasksmeeting__contentboxmeetings .buttonViewAll, .section__tasksmeeting__contenttaskstoday .buttonViewAll, .section__tasksmeeting .meetings--content .buttonViewAll {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+.section__handoffcustomlink__customlink__content .buttonViewAll:hover, .section__handoffcustomlink__handoff__content .buttonViewAll:hover, .section__members__content .buttonViewAll:hover, .section__projects__content .buttonViewAll:hover, .boxarchives__content .buttonViewAll:hover, .section__statistics__archives .boxstatistics__content .buttonViewAll:hover, .section__tasksmeeting__contentboxmeetings .buttonViewAll:hover, .section__tasksmeeting__contenttaskstoday .buttonViewAll:hover, .section__tasksmeeting .meetings--content .buttonViewAll:hover {
+  color: #cfaa40;
+}
+.section__handoffcustomlink__customlink__content .buttonViewAll i, .section__handoffcustomlink__handoff__content .buttonViewAll i, .section__members__content .buttonViewAll i, .section__projects__content .buttonViewAll i, .boxarchives__content .buttonViewAll i, .section__statistics__archives .boxstatistics__content .buttonViewAll i, .section__tasksmeeting__contentboxmeetings .buttonViewAll i, .section__tasksmeeting__contenttaskstoday .buttonViewAll i, .section__tasksmeeting .meetings--content .buttonViewAll i {
+  color: #cfaa40;
+}
+@media (max-width: 480px) {
+  .section__handoffcustomlink__customlink__content .title_box, .section__handoffcustomlink__handoff__content .title_box, .section__members__content .title_box, .section__projects__content .title_box, .boxarchives__content .title_box, .section__statistics__archives .boxstatistics__content .title_box, .section__tasksmeeting__contentboxmeetings .title_box, .section__tasksmeeting__contenttaskstoday .title_box, .section__tasksmeeting .meetings--content .title_box {
+    font-size: 1.8rem;
+  }
+  .section__handoffcustomlink__customlink__content .buttonViewAll, .section__handoffcustomlink__handoff__content .buttonViewAll, .section__members__content .buttonViewAll, .section__projects__content .buttonViewAll, .boxarchives__content .buttonViewAll, .section__statistics__archives .boxstatistics__content .buttonViewAll, .section__tasksmeeting__contentboxmeetings .buttonViewAll, .section__tasksmeeting__contenttaskstoday .buttonViewAll, .section__tasksmeeting .meetings--content .buttonViewAll {
+    font-size: 12px !important;
+  }
+  .section__handoffcustomlink__customlink__content .buttonViewAll i, .section__handoffcustomlink__handoff__content .buttonViewAll i, .section__members__content .buttonViewAll i, .section__projects__content .buttonViewAll i, .boxarchives__content .buttonViewAll i, .section__statistics__archives .boxstatistics__content .buttonViewAll i, .section__tasksmeeting__contentboxmeetings .buttonViewAll i, .section__tasksmeeting__contenttaskstoday .buttonViewAll i, .section__tasksmeeting .meetings--content .buttonViewAll i {
+    font-size: 11px;
+  }
+}
+
+.section__tasksmeeting .meetings__item {
+  display: flex;
+  margin-top: 20px;
+}
+.section__tasksmeeting .meetings__item .time__meeting {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #022d4d;
+}
+.section__tasksmeeting .meetings__item--content {
+  width: calc(100% - 94px);
+  margin-left: 30px;
+  background: #022d4d;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+}
+.section__tasksmeeting .meetings__item--right {
+  text-align: right;
+}
+.section__tasksmeeting .meetings__item--left {
+  width: calc(100% - 90px);
+}
+.section__tasksmeeting .meetings__item--left h3 {
+  font-size: 1.7rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.section__tasksmeeting .meetings__item--left p {
+  margin-bottom: 7px;
+}
+.section__tasksmeeting .meetings__item--left p a {
+  font-size: 1.4rem;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.section__members__item .buttonstatus, .section__projects__item .buttonstatus {
+  width: 70px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #cfaa40;
+  color: #fff;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.header-2 .nav-sub__menu li a, .section__handoffcustomlink__customlink__content .button__interlink, .section__handoffcustomlink__customlink__content .button__interlink span,
+.section__handoffcustomlink__customlink__content .button__interlink a {
+  transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+}
+
+.header-2 .nav__item > a, .header-2 .nav__list {
+  display: flex;
+}
+
+.section__handoffcustomlink__customlink__content .button__interlink {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background: #022d4d;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:after, .section__handoffcustomlink__customlink__content .button__interlink:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 50%;
+  width: 0;
+  background: #005391;
+  opacity: 0.6;
+  transition: width 0.3s ease-in-out;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:before {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.section__handoffcustomlink__customlink__content .button__interlink span,
+.section__handoffcustomlink__customlink__content .button__interlink a {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  padding: 10px 30px;
+  display: block;
+  color: #fff;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:hover span {
+  color: #fff;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:hover:after, .section__handoffcustomlink__customlink__content .button__interlink:hover:before {
+  width: 100%;
+}
+
+.section__titlepage {
+  margin: 40px 0;
+}
+.section__titlepage span {
+  font-size: 4rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  color: #000;
+  border-bottom: 5px solid #88a6b5;
+}
+@media (max-width: 1200px) {
+  .section__titlepage {
+    margin-bottom: 3rem;
+  }
+  .section__titlepage span {
+    font-size: 3rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+@media (max-width: 768px) {
+  .section__titlepage {
+    margin-bottom: 2.6rem;
+  }
+  .section__titlepage span {
+    font-size: 2.4rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+
+.section__handoffcustomlink__customlink__content, .section__handoffcustomlink__handoff__content, .section__members__content, .section__projects__content, .boxarchives__content, .section__statistics__archives .boxstatistics__content, .section__tasksmeeting__contentboxmeetings, .section__tasksmeeting__contenttaskstoday, .section__tasksmeeting .meetings--content {
+  border: 1px #88a6b5 solid;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+.section__handoffcustomlink__customlink__content .title_box, .section__handoffcustomlink__handoff__content .title_box, .section__members__content .title_box, .section__projects__content .title_box, .boxarchives__content .title_box, .section__statistics__archives .boxstatistics__content .title_box, .section__tasksmeeting__contentboxmeetings .title_box, .section__tasksmeeting__contenttaskstoday .title_box, .section__tasksmeeting .meetings--content .title_box {
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.section__handoffcustomlink__customlink__content .buttonViewAll, .section__handoffcustomlink__handoff__content .buttonViewAll, .section__members__content .buttonViewAll, .section__projects__content .buttonViewAll, .boxarchives__content .buttonViewAll, .section__statistics__archives .boxstatistics__content .buttonViewAll, .section__tasksmeeting__contentboxmeetings .buttonViewAll, .section__tasksmeeting__contenttaskstoday .buttonViewAll, .section__tasksmeeting .meetings--content .buttonViewAll {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+.section__handoffcustomlink__customlink__content .buttonViewAll:hover, .section__handoffcustomlink__handoff__content .buttonViewAll:hover, .section__members__content .buttonViewAll:hover, .section__projects__content .buttonViewAll:hover, .boxarchives__content .buttonViewAll:hover, .section__statistics__archives .boxstatistics__content .buttonViewAll:hover, .section__tasksmeeting__contentboxmeetings .buttonViewAll:hover, .section__tasksmeeting__contenttaskstoday .buttonViewAll:hover, .section__tasksmeeting .meetings--content .buttonViewAll:hover {
+  color: #cfaa40;
+}
+.section__handoffcustomlink__customlink__content .buttonViewAll i, .section__handoffcustomlink__handoff__content .buttonViewAll i, .section__members__content .buttonViewAll i, .section__projects__content .buttonViewAll i, .boxarchives__content .buttonViewAll i, .section__statistics__archives .boxstatistics__content .buttonViewAll i, .section__tasksmeeting__contentboxmeetings .buttonViewAll i, .section__tasksmeeting__contenttaskstoday .buttonViewAll i, .section__tasksmeeting .meetings--content .buttonViewAll i {
+  color: #cfaa40;
+}
+@media (max-width: 480px) {
+  .section__handoffcustomlink__customlink__content .title_box, .section__handoffcustomlink__handoff__content .title_box, .section__members__content .title_box, .section__projects__content .title_box, .boxarchives__content .title_box, .section__statistics__archives .boxstatistics__content .title_box, .section__tasksmeeting__contentboxmeetings .title_box, .section__tasksmeeting__contenttaskstoday .title_box, .section__tasksmeeting .meetings--content .title_box {
+    font-size: 1.8rem;
+  }
+  .section__handoffcustomlink__customlink__content .buttonViewAll, .section__handoffcustomlink__handoff__content .buttonViewAll, .section__members__content .buttonViewAll, .section__projects__content .buttonViewAll, .boxarchives__content .buttonViewAll, .section__statistics__archives .boxstatistics__content .buttonViewAll, .section__tasksmeeting__contentboxmeetings .buttonViewAll, .section__tasksmeeting__contenttaskstoday .buttonViewAll, .section__tasksmeeting .meetings--content .buttonViewAll {
+    font-size: 12px !important;
+  }
+  .section__handoffcustomlink__customlink__content .buttonViewAll i, .section__handoffcustomlink__handoff__content .buttonViewAll i, .section__members__content .buttonViewAll i, .section__projects__content .buttonViewAll i, .boxarchives__content .buttonViewAll i, .section__statistics__archives .boxstatistics__content .buttonViewAll i, .section__tasksmeeting__contentboxmeetings .buttonViewAll i, .section__tasksmeeting__contenttaskstoday .buttonViewAll i, .section__tasksmeeting .meetings--content .buttonViewAll i {
+    font-size: 11px;
+  }
+}
+
+.section__tasksmeeting .meetings__item {
+  display: flex;
+  margin-top: 20px;
+}
+.section__tasksmeeting .meetings__item .time__meeting {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #022d4d;
+}
+.section__tasksmeeting .meetings__item--content {
+  width: calc(100% - 94px);
+  margin-left: 30px;
+  background: #022d4d;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+}
+.section__tasksmeeting .meetings__item--right {
+  text-align: right;
+}
+.section__tasksmeeting .meetings__item--left {
+  width: calc(100% - 90px);
+}
+.section__tasksmeeting .meetings__item--left h3 {
+  font-size: 1.7rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.section__tasksmeeting .meetings__item--left p {
+  margin-bottom: 7px;
+}
+.section__tasksmeeting .meetings__item--left p a {
+  font-size: 1.4rem;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.section__members__item .buttonstatus, .section__projects__item .buttonstatus {
+  width: 70px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #cfaa40;
+  color: #fff;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+/*Mixin Responsive*/
+.header-2 .nav-sub__menu li a, .section__handoffcustomlink__customlink__content .button__interlink, .section__handoffcustomlink__customlink__content .button__interlink span,
+.section__handoffcustomlink__customlink__content .button__interlink a {
+  transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+}
+
+.header-2 .nav__item > a, .header-2 .nav__list {
+  display: flex;
+}
+
+.section__handoffcustomlink__customlink__content .button__interlink {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background: #022d4d;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:after, .section__handoffcustomlink__customlink__content .button__interlink:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 50%;
+  width: 0;
+  background: #005391;
+  opacity: 0.6;
+  transition: width 0.3s ease-in-out;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:before {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.section__handoffcustomlink__customlink__content .button__interlink span,
+.section__handoffcustomlink__customlink__content .button__interlink a {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  padding: 10px 30px;
+  display: block;
+  color: #fff;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:hover span {
+  color: #fff;
+}
+.section__handoffcustomlink__customlink__content .button__interlink:hover:after, .section__handoffcustomlink__customlink__content .button__interlink:hover:before {
+  width: 100%;
+}
+
+.section__titlepage {
+  margin: 40px 0;
+}
+.section__titlepage span {
+  font-size: 4rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  color: #000;
+  border-bottom: 5px solid #88a6b5;
+}
+@media (max-width: 1200px) {
+  .section__titlepage {
+    margin-bottom: 3rem;
+  }
+  .section__titlepage span {
+    font-size: 3rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+@media (max-width: 768px) {
+  .section__titlepage {
+    margin-bottom: 2.6rem;
+  }
+  .section__titlepage span {
+    font-size: 2.4rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+
+.section__handoffcustomlink__customlink__content, .section__handoffcustomlink__handoff__content, .section__members__content, .section__projects__content, .boxarchives__content, .section__statistics__archives .boxstatistics__content, .section__tasksmeeting__contentboxmeetings, .section__tasksmeeting__contenttaskstoday, .section__tasksmeeting .meetings--content {
+  border: 1px #88a6b5 solid;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+.section__handoffcustomlink__customlink__content .title_box, .section__handoffcustomlink__handoff__content .title_box, .section__members__content .title_box, .section__projects__content .title_box, .boxarchives__content .title_box, .section__statistics__archives .boxstatistics__content .title_box, .section__tasksmeeting__contentboxmeetings .title_box, .section__tasksmeeting__contenttaskstoday .title_box, .section__tasksmeeting .meetings--content .title_box {
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.section__handoffcustomlink__customlink__content .buttonViewAll, .section__handoffcustomlink__handoff__content .buttonViewAll, .section__members__content .buttonViewAll, .section__projects__content .buttonViewAll, .boxarchives__content .buttonViewAll, .section__statistics__archives .boxstatistics__content .buttonViewAll, .section__tasksmeeting__contentboxmeetings .buttonViewAll, .section__tasksmeeting__contenttaskstoday .buttonViewAll, .section__tasksmeeting .meetings--content .buttonViewAll {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+.section__handoffcustomlink__customlink__content .buttonViewAll:hover, .section__handoffcustomlink__handoff__content .buttonViewAll:hover, .section__members__content .buttonViewAll:hover, .section__projects__content .buttonViewAll:hover, .boxarchives__content .buttonViewAll:hover, .section__statistics__archives .boxstatistics__content .buttonViewAll:hover, .section__tasksmeeting__contentboxmeetings .buttonViewAll:hover, .section__tasksmeeting__contenttaskstoday .buttonViewAll:hover, .section__tasksmeeting .meetings--content .buttonViewAll:hover {
+  color: #cfaa40;
+}
+.section__handoffcustomlink__customlink__content .buttonViewAll i, .section__handoffcustomlink__handoff__content .buttonViewAll i, .section__members__content .buttonViewAll i, .section__projects__content .buttonViewAll i, .boxarchives__content .buttonViewAll i, .section__statistics__archives .boxstatistics__content .buttonViewAll i, .section__tasksmeeting__contentboxmeetings .buttonViewAll i, .section__tasksmeeting__contenttaskstoday .buttonViewAll i, .section__tasksmeeting .meetings--content .buttonViewAll i {
+  color: #cfaa40;
+}
+@media (max-width: 480px) {
+  .section__handoffcustomlink__customlink__content .title_box, .section__handoffcustomlink__handoff__content .title_box, .section__members__content .title_box, .section__projects__content .title_box, .boxarchives__content .title_box, .section__statistics__archives .boxstatistics__content .title_box, .section__tasksmeeting__contentboxmeetings .title_box, .section__tasksmeeting__contenttaskstoday .title_box, .section__tasksmeeting .meetings--content .title_box {
+    font-size: 1.8rem;
+  }
+  .section__handoffcustomlink__customlink__content .buttonViewAll, .section__handoffcustomlink__handoff__content .buttonViewAll, .section__members__content .buttonViewAll, .section__projects__content .buttonViewAll, .boxarchives__content .buttonViewAll, .section__statistics__archives .boxstatistics__content .buttonViewAll, .section__tasksmeeting__contentboxmeetings .buttonViewAll, .section__tasksmeeting__contenttaskstoday .buttonViewAll, .section__tasksmeeting .meetings--content .buttonViewAll {
+    font-size: 12px !important;
+  }
+  .section__handoffcustomlink__customlink__content .buttonViewAll i, .section__handoffcustomlink__handoff__content .buttonViewAll i, .section__members__content .buttonViewAll i, .section__projects__content .buttonViewAll i, .boxarchives__content .buttonViewAll i, .section__statistics__archives .boxstatistics__content .buttonViewAll i, .section__tasksmeeting__contentboxmeetings .buttonViewAll i, .section__tasksmeeting__contenttaskstoday .buttonViewAll i, .section__tasksmeeting .meetings--content .buttonViewAll i {
+    font-size: 11px;
+  }
+}
+
+.section__tasksmeeting .meetings__item {
+  display: flex;
+  margin-top: 20px;
+}
+.section__tasksmeeting .meetings__item .time__meeting {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #022d4d;
+}
+.section__tasksmeeting .meetings__item--content {
+  width: calc(100% - 94px);
+  margin-left: 30px;
+  background: #022d4d;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+}
+.section__tasksmeeting .meetings__item--right {
+  text-align: right;
+}
+.section__tasksmeeting .meetings__item--left {
+  width: calc(100% - 90px);
+}
+.section__tasksmeeting .meetings__item--left h3 {
+  font-size: 1.7rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.section__tasksmeeting .meetings__item--left p {
+  margin-bottom: 7px;
+}
+.section__tasksmeeting .meetings__item--left p a {
+  font-size: 1.4rem;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.section__members__item .buttonstatus, .section__projects__item .buttonstatus {
+  width: 70px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #cfaa40;
+  color: #fff;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.header-2 {
+  background-color: #022d4d;
+}
+.header-2 .container-master {
+  height: 8.3rem;
+}
+.header-2 .nav__menu, .header-2 .nav__list {
+  height: 100%;
+}
+.header-2 .nav__list {
+  align-items: center;
+  justify-content: flex-start;
+}
+.header-2 .nav__item {
+  position: relative;
+  height: 100%;
+}
+.header-2 .nav__item.active > a {
+  color: #cfaa40;
+}
+.header-2 .nav__item > a {
+  font-size: 1.6rem;
+  color: #fff;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 9px;
+}
+.header-2 .nav__item > a:hover {
+  background-color: #0c3a63;
+}
+.header-2 .nav__item > a.active {
+  background-color: #0c3a63;
+}
+.header-2 .nav__item svg {
+  margin-top: 3px;
+  margin-left: 3px;
+}
+.header-2 .nav__item.dropdown .nav-sub__menu {
+  display: block;
+}
+.header-2 .nav__item.dropdown svg {
+  transform: rotate(-180deg);
+}
+.header-2 .nav-sub__menu {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  min-width: 28rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 0.4rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.header-2 .nav-sub__menu li a {
+  padding: 1rem 1.2rem;
+  color: #022d4d;
+  display: block;
+}
+.header-2 .nav-sub__menu li a:hover {
+  background-color: rgba(207, 169, 64, 0.3215686275);
+}
+
+@media (max-width: 1200px) {
+  .header-2 .container-master {
+    height: 5.4rem;
+  }
+
+  .header-2 .nav__item > a {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .header-2 .container-master {
+    height: unset;
+    padding: 0;
+  }
+  .header-2 .nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.4rem 0;
+  }
+  .header-2 .nav__item {
+    width: 100%;
+  }
+  .header-2 .nav__item > a {
+    padding: 1rem 1.4rem;
+    justify-content: space-between;
+  }
+  .header-2 .nav__item > a:hover {
+    background-color: #125285;
+  }
+  .header-2 .nav__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .header-2 .nav-sub__menu {
+    position: unset;
+    border: 0;
+  }
+  .header-2 .nav-sub__menu li a {
+    padding: 1rem 2.7rem;
+  }
+}
+.section__tasksmeeting .list__task {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.section__tasksmeeting .list__task__item {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background: #cfaa40;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+.section__tasksmeeting .list__task__item a {
+  color: #fff;
+}
+.section__tasksmeeting .list__contenttask__item {
+  border-radius: 10px;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  margin-bottom: 15px;
+  background: #e6f3fc;
+  color: #000;
+  padding: 15px;
+}
+.section__tasksmeeting .list__contenttask__item > div {
+  color: #1b68a2;
+  font-size: 14px;
+  line-height: 22px;
+}
+.section__tasksmeeting .list__contenttask__item > div p {
+  color: #000;
+}
+.section__tasksmeeting .list__contenttask__item__description {
+  margin-bottom: 10px;
+}
+.section__tasksmeeting .list__contenttask__item__title {
+  padding: 0 0 8px 0;
+  font-size: 1.7rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.section__tasksmeeting .list__contenttask__item:last-child {
+  margin-bottom: 0;
+}
+
+.section__statistics__archives {
+  margin-top: 30px;
+}
+.section__statistics__archives .boxstatistics #myChart {
+  max-height: 380px !important;
+}
+
+.boxarchives__content {
+  border: 0;
+}
+
+.boxarchives__content {
+  background: #CFAA40;
+  color: #fff;
+}
+.boxarchives__content .buttonViewAll {
+  color: #fff;
+}
+.boxarchives__content .buttonViewAll:hover {
+  color: #022d4d;
+}
+.boxarchives__content__list__item {
+  border-radius: 10px;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  margin-top: 15px;
+  background: #e4c362;
+  padding: 10px;
+}
+.boxarchives__content__list__item__title {
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.boxarchives__content__list__item__title a {
+  color: #fff;
+}
+.boxarchives__content__list__item .date {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.boxarchives__content__list__item p.content {
+  color: #fff;
+}
+
+.section__projects {
+  margin-top: 30px;
+}
+.section__projects__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section__projects__item {
+  width: calc(33.3333333333% - 10px);
+  margin-right: 15px;
+  position: relative;
+  z-index: 9;
+  padding: 15px;
+  background: #e6f3fc;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.section__projects__item__name {
+  font-size: 1.7rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.section__projects__item .select {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  color: #e5bd40;
+  font-size: 20px;
+}
+.section__projects__item .description {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.section__projects__item .listMembersProjects {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section__projects__item .listMembersProjects a {
+  display: flex;
+  margin-right: 3px;
+}
+.section__projects__item .others {
+  position: absolute;
+  right: 15px;
+  color: #022D4D;
+}
+.section__projects__item a {
+  z-index: 9999;
+}
+.section__projects__item:last-child {
+  margin-right: 0;
+}
+
+.section__members {
+  margin-top: 30px;
+}
+.section__members__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.section__members__item {
+  width: calc(33.3333333333% - 10px);
+  margin-right: 15px;
+  position: relative;
+  z-index: 9;
+  background: #022D4D;
+  border-radius: 10px;
+  padding: 15px;
+}
+.section__members__item__name {
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.7;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.section__members__item .select {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  color: #e5bd40;
+  font-size: 20px;
+}
+.section__members__item a {
+  z-index: 9999;
+}
+.section__members__item:last-child {
+  margin-right: 0;
+}
+.section__members__itemwork {
+  position: relative;
+  margin-bottom: 15px;
+}
+.section__members__itemwork__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.7;
+}
+.section__members__itemwork .buttonviewall {
+  top: 0 !important;
+  color: #fff !important;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.section__members__itemwork__content {
+  color: #fff;
+}
+.section__members__itemwork:last-child {
+  margin-right: 0;
+}
+
+.section__handoffcustomlink {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+.section__handoffcustomlink__handoff__itemhandoff {
+  background: #e6f3fc;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 20px;
+}
+.section__handoffcustomlink__handoff__itemhandoff .title__handoff {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.section__handoffcustomlink__handoff__itemhandoff .select {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  color: #cfaa40;
+  font-size: 20px;
+}
+.section__handoffcustomlink__customlink__content .button__interlink {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #fff;
+  background: #022D4D;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+.section__handoffcustomlink__customlink__content .button__interlink span {
+  padding: 0;
+  font-family: "Averta", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+@media (max-width: 480px) {
+  .section__projects__item .others {
+    display: flex;
+    width: 100%;
+    position: relative;
+    left: 5px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .section__projects__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .section__handoffcustomlink__handoff {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .boxmeetings,
+.boxstatistics {
+    margin-bottom: 30px;
+  }
+
+  .section__members__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}/*# sourceMappingURL=task.css.map */

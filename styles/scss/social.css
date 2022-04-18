@@ -1,0 +1,349 @@
+.manage-plate__item, .manage-plate__item .card__actions span,
+.manage-plate__item .card__actions a, .manage-plate__item .card__actions {
+  transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+}
+
+.header__search .search__box, .header__search .search__wrap .nav__item--special, .header__search .search__wrap .nav__list, .header__search .search__wrap {
+  display: flex;
+}
+
+.manage-plate__item .card__actions {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background: #022d4d;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.manage-plate__item .card__actions:after, .manage-plate__item .card__actions:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 50%;
+  width: 0;
+  background: #005391;
+  opacity: 0.6;
+  transition: width 0.3s ease-in-out;
+}
+.manage-plate__item .card__actions:before {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.manage-plate__item .card__actions span,
+.manage-plate__item .card__actions a {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  padding: 10px 30px;
+  display: block;
+  color: #fff;
+}
+.manage-plate__item .card__actions:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+.manage-plate__item .card__actions:hover span {
+  color: #fff;
+}
+.manage-plate__item .card__actions:hover:after, .manage-plate__item .card__actions:hover:before {
+  width: 100%;
+}
+
+.section__titlepage {
+  margin: 40px 0;
+}
+.section__titlepage span {
+  font-size: 4rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  color: #000;
+  border-bottom: 5px solid #88a6b5;
+}
+@media (max-width: 1200px) {
+  .section__titlepage {
+    margin-bottom: 3rem;
+  }
+  .section__titlepage span {
+    font-size: 3rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+@media (max-width: 768px) {
+  .section__titlepage {
+    margin-bottom: 2.6rem;
+  }
+  .section__titlepage span {
+    font-size: 2.4rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+
+/*Mixin Responsive*/
+.manage-plate__item, .manage-plate__item .card__actions, .manage-plate__item .card__actions span,
+.manage-plate__item .card__actions a {
+  transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+}
+
+.header__search .search__box, .header__search .search__wrap .nav__item--special, .header__search .search__wrap .nav__list, .header__search .search__wrap {
+  display: flex;
+}
+
+.manage-plate__item .card__actions {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background: #022d4d;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.manage-plate__item .card__actions:after, .manage-plate__item .card__actions:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 50%;
+  width: 0;
+  background: #005391;
+  opacity: 0.6;
+  transition: width 0.3s ease-in-out;
+}
+.manage-plate__item .card__actions:before {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.manage-plate__item .card__actions span,
+.manage-plate__item .card__actions a {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  padding: 10px 30px;
+  display: block;
+  color: #fff;
+}
+.manage-plate__item .card__actions:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+.manage-plate__item .card__actions:hover span {
+  color: #fff;
+}
+.manage-plate__item .card__actions:hover:after, .manage-plate__item .card__actions:hover:before {
+  width: 100%;
+}
+
+.section__titlepage {
+  margin: 40px 0;
+}
+.section__titlepage span {
+  font-size: 4rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  color: #000;
+  border-bottom: 5px solid #88a6b5;
+}
+@media (max-width: 1200px) {
+  .section__titlepage {
+    margin-bottom: 3rem;
+  }
+  .section__titlepage span {
+    font-size: 3rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+@media (max-width: 768px) {
+  .section__titlepage {
+    margin-bottom: 2.6rem;
+  }
+  .section__titlepage span {
+    font-size: 2.4rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+
+.header__search {
+  background-color: #022d4d;
+  height: 60px;
+}
+.header__search .container-master {
+  height: 100%;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.header__search .search__wrap {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.header__search .search__wrap .nav__list {
+  padding: 1rem 0 0.4rem;
+  flex-wrap: wrap;
+}
+.header__search .search__wrap .nav__item--special a:first-child {
+  margin-right: 0;
+  background-color: #fff;
+  color: #022d4d;
+  border-radius: 2px 0 0 2px;
+}
+.header__search .search__wrap .nav__item--special a:last-child {
+  border-radius: 0 2px 2px 0;
+}
+.header__search .search__wrap .nav__link {
+  margin-right: 1.2rem;
+  background-color: #cfaa40;
+  color: #fff;
+  padding: 0.75rem 1.4rem;
+  display: block;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+.header__search .search__box {
+  margin-top: -3px;
+  align-items: center;
+  background-color: #99B5C2;
+  border-radius: 2px;
+}
+.header__search .search__box .search__hub {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.header__search .search__box .search__hub p {
+  padding: 0px 7px 0 20px;
+  color: #fff;
+  background-color: #99B5C2;
+}
+.header__search .search__box .search__hub i {
+  font-size: 13px;
+  padding-right: 15px;
+  color: #fff;
+}
+.header__search .search__box .search__hub:hover .drop__hub {
+  display: block;
+}
+.header__search .search__box .drop__hub {
+  padding: 4px 8px;
+  display: none;
+  top: 18px;
+  left: 120px;
+  background-color: #fff;
+  position: absolute;
+}
+.header__search .search__box .drop__hub a {
+  text-align: center;
+  color: #003B5F;
+  display: block;
+}
+.header__search .search__box .search {
+  background-color: #fff;
+}
+.header__search .search__box .search .search__icon {
+  padding: 0 0 0 20px;
+  font-size: 17px;
+}
+.header__search .search__box .search .search__icon i {
+  color: #022d4d;
+}
+.header__search .search__box .search input {
+  border: 0;
+  outline: none;
+  font-size: 1.4rem;
+  color: #022d4d;
+  padding: 1rem 0;
+  width: 36rem;
+}
+.header__search .search__box .search__icon {
+  padding: 0 0 0 24px;
+  font-size: 17px;
+}
+.header__search .search__box .search__icon i {
+  color: #022d4d;
+}
+.header__search .search__box input {
+  border: 0;
+  outline: none;
+  font-size: 1.4rem;
+  color: #022d4d;
+  padding: 1rem 1.4rem;
+  width: 36rem;
+}
+.header__search .search__box button {
+  border: 0;
+  outline: none;
+  color: #fff;
+  background-color: #cfaa40;
+  padding: 10.5px 40px;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+}
+.header__search .search__box button:hover {
+  background-color: #b78c13;
+}
+
+.social__banner img {
+  width: 100%;
+}
+
+.manage-plate__item {
+  background-color: #cfaa40;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+.manage-plate__item:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 7px 12px 0;
+}
+.manage-plate__item .item__header {
+  margin-bottom: 7px;
+}
+.manage-plate__item .item__title {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.manage-plate__item .item__body {
+  margin-bottom: 15px;
+}
+.manage-plate__item .item__copy {
+  height: 60px;
+  color: #fff;
+  font-family: "Caros", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+}
+.manage-plate__item .card__actions {
+  width: 122px;
+  height: 40px;
+  border-radius: 10px;
+  border: dashed 1px #022d4d;
+  background: #022d4d;
+  text-align: center;
+  color: #fff;
+  font-family: "Averta", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+.manage-plate__item .card__actions a {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.manage-plate__item .card__actions span {
+  padding: 0;
+}/*# sourceMappingURL=social.css.map */

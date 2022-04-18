@@ -1,0 +1,205 @@
+@import '../common/mixin';
+@import '../common/variable';
+
+.header {
+  &__commerce {
+    background-color: $primaryColor;
+
+    .nav {
+      &__list {
+        @extend %d-flex;
+        padding: 1rem 0 0.4rem;
+        flex-wrap: wrap;
+        .nav__item {
+          position: relative;
+          margin: 0 1.2rem 1rem 0;
+          background-color: #fff;
+          color: $primaryColor;
+      
+          .menu__list__item {
+            display: flex;
+            align-items: center;
+          }
+          label {
+            color: #000;
+            flex-grow: 1;
+            margin-left: 4px;
+          }
+        }
+        .active{
+          color: #fff;
+           background-color: #cfaa40; 
+        }
+        .show__type{
+          .menu__list{
+            display: block;
+          }
+        }
+        .menu__list{
+          top: 55px;
+          right: 0px;
+          display: none;
+          background-color: #fff;
+          position: absolute;
+          padding: 17px 23px 17px 17px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0 7px 12px 0;
+          .menu__list__item{
+            border-color: #839aa3;
+            padding-bottom: 18px;
+            input{
+              width: 25px;
+              height: 25px;
+              border-color: #839aa3;
+            }
+            label{
+              color: #28536b;
+            }
+          }
+          .menu__list__item1{
+          
+            display: flex;
+            justify-content: space-between;
+            .buttonclear{
+              border: none;
+              background-color: #fff;
+              font-style: italic;
+            }
+            .buttonapply{
+              color: #fff;
+              background-color:#022d4d;
+              border: 0;
+              outline: none;
+              padding: 9px 12px 9px 12px;
+              border-radius: 5px;  
+            }
+          }
+         }
+       }
+      
+      &__item--special {
+        @extend %d-flex;
+        a:first-child {
+          margin-right: 0;
+          background-color: $secondaryColor;
+          color: #fff;
+          border-radius: 2px 0 0 2px;
+        }
+        a:last-child {
+          border-radius: 0 2px 2px 0;
+        }
+      }
+
+      &__link {
+        padding: 1rem 1.4rem;
+        display: block;
+        border-radius: 2px;
+        color: inherit;
+      }
+    }
+  }
+}
+
+.commerce__wrapper {
+  margin-bottom: 70px;
+}
+
+.commerce__banner img {
+  width: 100%;
+}
+
+.commerce__title {
+  @extend %styleTitle;
+}
+.search__commerce{
+  display: none;
+  margin-bottom: 20px;
+  .search__box {
+    @extend %d-flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    .search__input{
+      border: 1px solid #f1f4f6;
+    }
+
+    .search__icon {
+      padding: 0 0 0 24px;
+      font-size: 17px;
+
+      i {
+        color: $primaryColor;
+      }
+    }
+
+    input {
+      border: 0;
+      outline: none;
+      font-size: 1.4rem;
+      color: $primaryColor;
+      padding: 1rem 1.4rem;
+      width: 36rem;
+    }
+
+    button {
+      border: 0;
+      outline: none;
+      color: #fff;
+      background-color: $secondaryColor;
+      padding: 12px 40px;
+      border-radius: 0 2px 2px 0;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #b78c13;
+      }
+    }
+  }
+
+}
+.show__brand{
+    display: block;
+  }
+
+.commerce-card {
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 2px solid $secondaryColor;
+  margin-bottom: 3rem;
+
+  .card__header {
+    @extend %d-flex;
+    .card__image {
+      width: 10rem;
+      margin-right: 1.2rem;
+      img {
+        border-radius: 2px;
+      }
+    }
+
+    .card__title {
+      display: flex;
+      align-items: center;
+      font-family: $fontCarosBold;
+      font-size: 1.8rem;
+    }
+  }
+
+  .card__copy {
+    color: $primaryColor;
+    font-size: 1.4rem;
+    margin: 1.6rem 0 1rem;
+    height: 6.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card__actions {
+    a {
+      @extend %btn-animation;
+      text-transform: uppercase;
+      span {
+        font-weight: 300;
+      }
+    }
+  }
+}

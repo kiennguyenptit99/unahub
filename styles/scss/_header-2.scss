@@ -1,0 +1,139 @@
+@import '../common/mixin';
+@import '../common/variable';
+
+
+// Header 2
+.header-2 {
+	background-color: $primaryColor;
+
+	.container-master {
+		height: 8.3rem;
+	}
+
+	.nav {
+		&__menu, &__list {
+			height: 100%;
+		}
+		&__list {
+			@extend %d-flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+
+		&__item {
+			position: relative;
+			// margin-right: 30px;
+			// &:last-child {
+			// 	margin-right: 0;
+			// }
+			height: 100%;
+
+			&.active {
+				> a {
+					color: $secondaryColor;
+				}
+			}
+
+			> a {
+				font-size: 1.6rem;
+				color: #fff;
+				height: 100%;
+				@extend %d-flex;
+				align-items: center;
+				justify-content: flex-start;
+				padding: 0 9px;
+
+				&:hover {
+					// color: $secondaryColor;
+					background-color: #0c3a63;
+				}
+
+				&.active {
+					background-color: #0c3a63;
+				}
+			}
+
+			svg {
+				margin-top: 3px;
+				margin-left: 3px;
+			}
+
+			&.dropdown {
+				.nav-sub__menu {
+					display: block;
+				}
+				svg {
+					transform: rotate(-180deg);
+				}
+			}
+		}
+
+		&-sub__menu {
+			position: absolute;
+			display: none;
+			top: 100%;
+			left: 0;
+			background-color: #fff;
+			min-width: 28rem;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			padding: .4rem 0;
+			border: 1px solid rgba(0, 0, 0, 0.2);
+			li a {
+				@extend %transition;
+				padding: 1rem 1.2rem;
+				color: $primaryColor;
+				display: block;
+
+				&:hover {
+					background-color: #cfa94052;
+				}
+			}
+		}
+	}
+}
+
+@include desktop1200 {
+	.header-2 .container-master {
+		height: 5.4rem;
+	}
+	.header-2 .nav__item:not(:last-child) {
+		// margin-right: 15px;
+	}
+	.header-2 .nav__item > a {
+		font-size: 1.4rem;
+	}
+}
+
+@include tablet768 {
+	.header-2 {
+    .container-master {
+      height: unset;
+      padding: 0;
+    }
+    .nav__list {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: .4rem 0;
+    }
+    .nav__item {
+      width: 100%;
+      > a {
+        padding: 1rem 1.4rem;
+        justify-content: space-between;
+        &:hover {
+          background-color: #125285;
+        }
+      }
+    }
+    .nav__item:not(:last-child) {
+      margin-right: 0;
+    }
+    .nav-sub__menu {
+      position: unset;
+      border: 0;
+      li a {
+        padding: 1rem 2.7rem;
+      }
+    }
+  }
+}

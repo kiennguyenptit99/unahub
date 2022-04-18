@@ -1,0 +1,230 @@
+@import '../common/variable';
+
+//Flex-Width
+@mixin flex-width($width) {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 $width;
+  flex: 0 0 $width;
+  max-width: $width;
+}
+
+//Border-radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+//Scroll Bar
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+  ::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+//Animation
+@mixin animation($animation) {
+  -webkit-animation: $animation; /* Safari 4.0 - 8.0 */
+  animation: $animation;
+}
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName}  {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+//Box-shadow
+@mixin box-shadow($boxshadow) {
+  -webkit-box-shadow: $boxshadow;
+  -moz-box-shadow: $boxshadow;
+  box-shadow: $boxshadow;
+}
+
+// Transform
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+// rotate
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+  @include transform(scale($scale));
+}
+
+// translate
+@mixin translate($x, $y) {
+  @include transform(translate($x, $y));
+}
+
+// skew
+@mixin skew($x, $y) {
+  @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+//transform origin
+@mixin transform-origin($origin) {
+  moz-transform-origin: $origin;
+  -o-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+  transform-origin: $origin;
+}
+
+@mixin transition($time) {
+  transition: all $time !important;
+  -o-transition: all $time !important;
+  -ms-transition: all $time !important;
+  -webkit-transition: all $time !important;
+  -moz-transition: all $time !important;
+}
+
+@mixin gradient-right($color1, $color2) {
+  background: $color1; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, $color1, $color2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, $color1, $color2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, $color1, $color2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, $color1, $color2); /* Standard syntax */
+}
+
+@mixin gradient-top($color1, $color2) {
+  background: $color1; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(bottom, $color1, $color2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, $color1, $color2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, $color1, $color2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top, $color1, $color2); /* Standard syntax */
+
+}
+
+//Filter
+@mixin filter($filter-type) {
+  -webkit-filter: $filter-type;
+  -moz-filter: $filter-type;
+  -ms-filter: $filter-type;
+  -o-filter: $filter-type;
+  filter: $filter-type;
+}
+
+//Place Holder
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    @content;
+  }
+
+  &::-moz-placeholder { /* Firefox 19+ */
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+//Box image
+@mixin image($dp,$w,$h) {
+  display: $dp;
+  width: $w;
+  height: $h;
+}
+
+//Size Resposive
+$mobile480: 480px;
+$tablet768: 768px;
+$tablet980: 980px;
+$desktop1024: 1024px;
+$desktop1200: 1200px;
+$desktop1366: 1366px;
+$desktop1440: 1440px;
+$desktop1600: 1600px;
+$desktop1920: 1920px;
+
+/*Mixin Responsive*/
+@mixin mobile480 {
+  @media (max-width: #{$mobile480}) {
+    @content;
+  }
+}
+
+@mixin tablet768 {
+  @media (max-width: #{$tablet768}) {
+    @content;
+  }
+}
+
+@mixin tablet980 {
+  @media (max-width: #{$tablet980}) {
+    @content;
+  }
+}
+
+@mixin desktop1024 {
+  @media (max-width: #{$desktop1024}) {
+    @content;
+  }
+}
+
+@mixin desktop1200 {
+  @media (max-width: #{$desktop1200}) {
+    @content;
+  }
+}
+
+@mixin desktop1366 {
+  @media (max-width: #{$desktop1366}) {
+    @content;
+  }
+}
+
+@mixin desktop1440 {
+  @media (max-width: #{$desktop1440}) {
+    @content;
+  }
+}
+
+@mixin desktop1600 {
+  @media (max-width: #{$desktop1600}) {
+    @content;
+  }
+}
+
+@mixin desktop1920 {
+  @media (max-width: #{$desktop1920}) {
+    @content;
+  }
+}

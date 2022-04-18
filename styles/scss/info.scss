@@ -1,0 +1,197 @@
+@import '../common/mixin';
+@import '../common/variable';
+
+.info__wrapper {
+  margin-bottom: 50px;
+}
+//Header Search
+.header__search {
+  background-color: #022d4d;
+  height: 60px;
+  .container-master {
+    height: 100%;
+  }
+
+  .search__wrap {
+    @extend %d-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .search__list {
+    @extend %d-flex;
+    align-items: center;
+
+    .search__item:not(:last-child) {
+      margin-right: 2.4rem;
+    }
+
+    .search__link {
+      color: #fff;
+      font-size: 1.4rem;
+
+      &:hover {
+        color: $secondaryColor;
+      }
+    }
+  }
+
+  .search__box {
+    @extend %d-flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+
+    .search__icon {
+      padding: 0 0 0 24px;
+      font-size: 17px;
+
+      i {
+        color: $primaryColor;
+      }
+    }
+
+    input {
+      border: 0;
+      outline: none;
+      font-size: 1.4rem;
+      color: $primaryColor;
+      padding: 1rem 1.4rem;
+      width: 36rem;
+    }
+
+    button {
+      border: 0;
+      outline: none;
+      color: #fff;
+      background-color: $secondaryColor;
+      padding: 12px 40px;
+      border-radius: 0 2px 2px 0;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #b78c13;
+      }
+    }
+  }
+
+  //End Header Search
+}
+
+.info__banner {
+  img {
+    width: 100%;
+  }
+}
+
+//
+.info__title {
+  @extend %styleTitle;
+  margin-bottom: 2.2rem;
+}
+
+.btn-link__rating {
+  color: $primaryColor;
+  font-size: 1.4rem;
+  border: 1px solid $secondaryColor;
+  padding: 1.2rem 1.6rem;
+  border-radius: 2px;
+  margin-bottom: 2.8rem;
+  display: inline-block;
+
+  &:hover {
+    border: 1px solid $primaryColor;
+    background-color: $primaryColor;
+    color: #fff;
+  }
+}
+
+//End
+
+//
+.info-card {
+  margin-bottom: 30px;
+  border-radius: 20px;
+  transition: 300ms;
+
+  &:hover {
+    box-shadow: 0 20px 40px rgb(0 0 0 / 20%);
+    .card__image img {
+      transform: scale(1.1);
+    }
+  }
+
+  .card__image {
+    height: 150px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+
+    img {
+      transition: 300ms;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 20px 20px 0 0;
+    }
+  }
+
+  .card__body {
+    border-left: 1px solid #022d4d5e;
+    border-bottom: 1px solid #022d4d5e;
+    border-right: 1px solid #022d4d5e;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .card__title {
+    font-family: $fontCarosBold;
+    font-size: 2rem;
+    line-height: 24px;
+    height: 47px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card__copy {
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card__date {
+    margin: 10px 0 14px;
+  }
+
+  .card__rate {
+    margin: 20px 0 15px;
+
+    i {
+      color: $secondaryColor;
+    }
+  }
+
+  .card__actions {
+    a {
+      @extend %btn-animation;
+      text-transform: uppercase;
+
+      span {
+        font-weight: 200;
+      }
+    }
+  }
+}
+
+@include desktop1200 {
+  .search__box input {
+    width: 24rem;
+  }
+}
+
+
+
+
+
+

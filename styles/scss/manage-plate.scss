@@ -1,0 +1,135 @@
+@import '../common/mixin';
+@import '../common/variable';
+
+// Header 2
+@import './header-2';
+// End Header 2
+
+
+.tpl-manage-plate {
+  .manage-plate__title {
+    @extend %styleTitle;
+  }
+
+  .chart__title {
+    position: relative;
+  }
+
+  .manage-plate__wrapper {
+    padding-bottom: 100px;
+    padding-top: 50px;
+  }
+
+  .select__chart {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 4px 0;
+    border-radius: 2px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 300ms;
+
+    li {
+      padding: 4px 8px;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(204, 204, 204, 0.247);
+      }
+    }
+
+    &.active {
+      opacity: 1;
+      pointer-events: initial;
+    }
+  }
+
+  .manage-plate__chart {
+    margin-bottom: 3rem;
+		border-radius: 3rem;
+		border: 1px solid rgba(136, 166, 181, .4);
+		padding: 2rem;
+		.chart__title {
+			@extend %d-flex;
+			justify-content: space-between;
+			align-items: center;
+			h4 {
+				font-size: 2rem;
+				color: #000;
+				font-family: $fontCarosBold;
+			}
+			button {
+				cursor: pointer;
+				border: 0;
+				outline: 0;
+				background-color: transparent;
+			}
+			i {
+				color: $secondaryColor;
+				font-size: 8px;
+			}
+		}
+  }
+
+  //wrap items
+  .manage-plate__item {
+    @extend %transition;
+    background-color: $secondaryColor;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.2) 0 7px 12px 0;
+    }
+
+    .item__header {
+      margin-bottom: 7px;
+    }
+
+    .item__title {
+      color: $white;
+      font-size: 2rem;
+      font-family: $fontCarosBold;
+    }
+
+    .item__body {
+      margin-bottom: 15px;
+    }
+
+    .item__copy {
+      height: 60px;
+      color: $white;
+      font-family: $fontCaros;
+      font-size: 1.4rem;
+    }
+
+    .card__actions {
+      @extend %btn-animation;
+      a{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+      }
+      width: 122px;
+      height: 40px;
+      border-radius: 10px;
+      border: dashed 1px $primaryColor;
+      background: $primaryColor;
+      text-align: center;
+      color: $white;
+      font-family: $fontAverta;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19px;
+      text-transform: uppercase;
+      span {
+        padding: 0;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,114 @@
+@import '../common/mixin';
+@import '../common/variable';
+
+// Header 2
+@import './header-2';
+// End Header 2
+
+@import './transaction-type';
+
+//titlePage
+h1.titlePage{
+    @extend %styleTitle;
+}
+//Chart
+.boxChartFinance{
+    margin-top: 30px;
+    .titlebox{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .content__Finance{
+        border: 1px #88A6B5 solid;
+        border-radius: 10px;
+        padding: 15px;
+        position: relative;
+        .buttonViewAll{
+            position: absolute;
+            right: 15px;
+            top: 20px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #000;
+            &:hover{
+                color: #cfaa40;
+            }
+        }
+    }
+    #myChart{
+        max-height: 411px !important;
+    }
+}
+//ListFinance
+.boxListFinance{
+    margin-bottom: 140px;
+}
+.ListFinance{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    .itemFinance{
+        width: calc(33.3% - 30px);
+        margin: 0 15px 30px;
+        background: $secondaryColor;
+        color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        .titleItemFinance{
+            font-size: 2rem;
+            font-family: $fontCarosBold;
+
+        }
+        .descriptionItemFinance {
+            height: 6rem;
+            margin: 1.2rem 0 2rem;
+            font-size: 1.4rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .buttonItemFinance{
+            @extend %btn-animation;
+            width: 50%;
+            max-width: 120px;
+            height: 4rem;
+            background: #022d4d;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            text-transform: uppercase;
+            span {
+                padding: 0;
+                font-family: $fontAverta;
+                font-weight: 300;
+            }
+        }
+    }
+    .itemFinance:nth-child(3) , .itemFinance:nth-child(6){
+        margin-right: 0;
+    }
+
+}
+//endListFinance
+@include tablet768 {
+    .boxListFinance {
+        padding: 0 15px;;
+    }
+    .ListFinance .itemFinance{
+        width: calc(100%);
+        margin: 0 0 15px;
+    }
+}
+
+@include tablet980 {
+
+}
+
+@include desktop1024 {
+
+}
+
+@include desktop1200 {
+
+}

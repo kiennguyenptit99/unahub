@@ -1,0 +1,215 @@
+@import '../common/mixin';
+@import '../common/variable';
+.header__search {
+  background-color: #022d4d;
+  height: 60px;
+  .container-master {
+    height: 100%;
+    font-family: $fontCarosBold;
+  }
+
+  .search__wrap {
+    @extend %d-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    .nav {
+      &__list {
+        @extend %d-flex;
+        padding: 1rem 0 0.4rem;
+        flex-wrap: wrap;
+      }
+
+      &__item--special {
+        @extend %d-flex;
+        a:first-child {
+          margin-right: 0;
+          background-color: #fff;
+          color: $primaryColor;
+          border-radius: 2px 0 0 2px;
+        }
+        a:last-child {
+          border-radius: 0 2px 2px 0;
+        }
+      }
+
+      &__link {
+        margin-right: 1.2rem;
+        background-color: $secondaryColor;
+        color: #fff;
+        padding: 0.75rem 1.4rem;
+        display: block;
+        border-radius: 2px;
+        margin-bottom: 1rem;
+      }
+    }
+    
+  }
+
+  .search__box {
+    margin-top: -3px;
+    @extend %d-flex;
+    align-items: center;
+    background-color:#99B5C2 ;
+    border-radius: 2px;
+    .search__hub{
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      p{
+        padding: 0px 7px 0 20px;
+        color: #fff;
+        background-color: #99B5C2;
+      }
+      i{
+        font-size: 13px;
+        padding-right: 15px;
+        color: #fff;
+      }
+      &:hover{
+        .drop__hub{
+          display: block;
+        }
+      }
+    }
+    .drop__hub{
+      padding: 4px 8px;
+      display: none;
+      top: 18px;
+      left: 120px;
+      background-color: #fff;
+      position: absolute;
+      a{
+        text-align: center;
+        color: #003B5F;
+        display: block;
+      
+      }
+    }
+    .search{
+      background-color: #fff;
+      .search__icon {
+        padding: 0 0 0 20px;
+        font-size: 17px;
+  
+        i {
+          color: $primaryColor;
+        }
+      }
+  
+      input {
+        border: 0;
+        outline: none;
+        font-size: 1.4rem;
+        color: $primaryColor;
+        padding: 1rem 0;
+        width: 36rem;
+      }
+
+    }
+    .search__icon {
+      padding: 0 0 0 24px;
+      font-size: 17px;
+
+      i {
+        color: $primaryColor;
+      }
+    }
+
+    input {
+      border: 0;
+      outline: none;
+      font-size: 1.4rem;
+      color: $primaryColor;
+      padding: 1rem 1.4rem;
+      width: 36rem;
+    }
+
+    button {
+      border: 0;
+      outline: none;
+      color: #fff;
+      background-color: $secondaryColor;
+      padding: 10.5px 40px;
+      border-radius: 0 2px 2px 0;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #b78c13;
+      }
+    }
+  }
+}
+.category__banner {
+    width: 100%;
+    height: auto;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: cover;
+
+
+    }
+  }
+.category__wrapper {
+    margin: 40px 0;
+    background-color: #fff;
+    height: 100%;
+    .backtosocial{
+        i{
+          font-size:20px;  
+        }
+        a{
+          font-family: $fontCarosBold;
+          padding-left: 10px;
+          color: #000;
+          font-size: 20px;
+        }
+    }
+    .backtofriends{
+        i{
+            font-size:20px;  
+          }
+          a{
+            font-family: $fontCarosBold;
+            padding-left: 10px;
+            color: #000;
+            font-size: 20px;
+          }
+     }
+    .category__title {
+        @extend %styleTitle;
+    }
+    .category_group{
+        .createpost{
+            display: flex;
+            align-items: center;
+            border: 2.5px solid #7f9daf;
+            border-radius: 3px;
+           input{
+               background-color: #9DB3C0;
+               border: 0;
+               border-radius: 2px;
+               outline: none;
+               font-size: 15px;
+               color: $primaryColor;
+               padding: 10px 13px;
+               width: 86%;
+               margin: 8px;
+              &::placeholder{
+                  color: #fff;
+              }
+           }
+           i{
+               color: #DBB65E;
+               font-size: 24px;
+               padding: 0px 8px 0 8px;
+           }
+        }
+    }
+}

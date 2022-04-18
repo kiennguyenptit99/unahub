@@ -1,0 +1,144 @@
+@import '../common/mixin';
+@import '../common/variable';
+
+.select__transaction {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  background-color: #b2b2b2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 300ms;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+
+  }
+}
+
+.select-close {
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: #b2b2b2;
+}
+
+.select__content {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 1.6rem 2.6rem;
+  max-width: 34rem;
+  position: absolute;
+  z-index: 101;
+
+  h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $secondaryColor;
+    padding-bottom: 1rem;
+    margin: 0;
+
+    span {
+      font-size: 1.8rem;
+      color: $primaryColor;
+      font-family: $fontCarosBold;
+    }
+
+    i {
+      color: #000;
+    }
+  }
+
+  .select__description {
+    font-size: 1.3rem;
+    font-family: $fontCaros;
+    margin: 2.2rem 0;
+  }
+
+  .select__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .select__item {
+      margin-bottom: 1.2rem;
+      border-radius: 20px;
+      border: 2px solid $secondaryColor;
+      padding: 1rem;
+      cursor: pointer;
+      transition: 250ms;
+
+      &:hover {
+        background-color: $secondaryColor;
+
+        h4,
+        p {
+          color: #fff;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      h4 {
+        margin: 0 0 1.4rem;
+        font-family: $fontCarosBold;
+        font-size: 1.4rem;
+      }
+
+      p {
+        margin-bottom: 0;
+        font-family: $fontCaros;
+        font-size: 1.2rem;
+      }
+
+      &.active {
+        background-color: $secondaryColor;
+
+        h4,
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .btn-submit {
+    @extend %btn-animation;
+    margin: 24px auto 0;
+    display: block;
+
+    span {
+      text-transform: uppercase;
+      font-weight: 300;
+      padding: 10px 45px;
+    }
+
+    &.disabled {
+      background-color: #e7ecf0;
+      cursor: not-allowed;
+      pointer-events: none;
+
+      &:after,
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

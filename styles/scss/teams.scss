@@ -1,0 +1,987 @@
+@import '../common/mixin';
+@import '../common/variable';
+
+// Header 2
+@import './header-2';
+// End Header 2
+
+%CalendarStyle {
+  .calendar {
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 1rem;
+      background-color: #fff;
+      border-bottom: 0.9px solid rgba(2,45,77,0.1);
+      button {
+        cursor: pointer;
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+      }
+      i {
+        color: $secondaryColor;
+      }
+    }
+    &__year {
+      font-size: 1.4rem;
+      font-family: $fontCarosBold;
+      color: #000;
+    }
+
+    &__content {
+      padding: 1.9rem 1.8rem 2rem;
+    }
+
+    &__table {
+      width: 100%;
+      th, td {
+        text-align: center;
+      }
+      th {
+        font-size: 1.2rem;
+        font-family: $fontCarosBold;
+        color: $primaryColor;
+        opacity: .7;
+      }
+      th {
+        padding: 1rem 0;
+      }
+      td {
+        padding: 1.4rem 0.8rem;
+        font-size: 1.2rem;
+        color: $primaryColor;
+      }
+      td.other {
+        opacity: 0;
+      }
+      td.active {
+        position: relative;
+        color: #fff;
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 2.4rem;
+          height: 2.4rem;
+          border-radius: 50%;
+          z-index: -1;
+          background: $secondaryColor;
+          box-shadow: 0 7px 10px #00000040;
+        }
+      }
+    }
+  }
+}
+
+%threeDot {
+  button {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    cursor: pointer;
+    i {
+      font-size: 4px;
+      color: $secondaryColor;
+    }
+  }
+}
+
+%status {
+  span {
+    display: inline-block;
+    margin: 1.4rem 0 1rem;
+    color: #fff;
+    padding: .6rem 1.2rem;
+    background-color: $secondaryColor;
+    border-radius: 10rem;
+  }
+}
+
+%boxShadow {
+  box-shadow: 0 2px 6px rgba(0, 128, 221, 0.1);
+  border-radius: .4rem;
+}
+
+%styleInput {
+  color: rgba(2, 45, 77, .7);
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+
+  &::-webkit-input-placeholder { /* Edge */
+    color: rgba(2, 45, 77, .7);
+  }
+
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(2, 45, 77, .7);
+  }
+
+  &::placeholder {
+    color: rgba(2, 45, 77, .7);
+  }
+}
+
+.tpl-teams {
+
+  .section__header {
+    margin: 50px 0;
+  }
+
+  main {
+    margin-bottom: 14rem;
+  }
+
+  form, form input {
+    width: 100%;
+  }
+
+  .section {
+    &__title {
+      @extend %styleTitle;
+    }
+
+    &__layout {
+      margin-top: 3rem;
+      .teams__title {
+        @extend %d-flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        h2 {
+          font-size: 2rem;
+          font-family: $fontCarosBold;
+          color: #000;
+        }
+        a {
+          font-size: 1.6rem;
+          margin-bottom: 2rem;
+          font-family: $fontCarosBold;
+          color: #000;
+          &:hover {
+            color: $secondaryColor;
+          }
+        }
+        i {
+          color: $secondaryColor;
+          margin-left: 8px;
+        }
+      }
+    }
+
+    // Section Project
+    &__project {
+      margin-top: 4.5rem;
+      border-radius: 2rem;
+      padding: 2rem;
+      border: 1px solid rgba(136, 166, 181, .4);
+
+      .container-master {
+        padding: 0;
+      }
+
+      .project {
+        &__card {
+          background-color: $primaryColor;
+          border-radius: 1rem;
+          padding: 1.6rem;
+          @extend %transition;
+          &:hover {
+            box-shadow: 0 0 10px 6px rgba(100, 100, 111, 0.2);
+          }
+        }
+        &__header {
+          @extend %d-flex;
+          @extend %threeDot;
+          justify-content: space-between;
+          h4 {
+            font-size: 1.6rem;
+            font-family: $fontCarosBold;
+            color: #fff;
+          }
+
+        }
+        &__status {
+          @extend %status;
+        }
+        &__text {
+          font-size: 1.4rem;
+          height: 76px;
+          overflow: hidden;
+          color: #fff;
+          margin-bottom: 2.4rem;
+          line-height: 1.9rem;
+        }
+        &-list__person {
+          @extend %d-flex;
+          flex-wrap: wrap;
+          li {
+            margin-right: .4rem;
+            margin-bottom: .4rem;
+            &:last-child {
+              margin-right: 0;
+            }
+            span {
+              color: #fff;
+            }
+          }
+        }
+        &-person__link {
+          @extend %d-flex;
+          width: 2.2rem;
+          height: 2.2rem;
+          overflow: hidden;
+          border-radius: 50%;
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    // End Section Project
+
+    // Section Chat
+    &__chat {
+      padding: 2rem 2rem 0;
+      border: 1px solid $secondaryColor;
+      border-radius: 2rem;
+      .container-master {
+        padding: 0;
+      }
+
+      .chat {
+        &__wrap {
+          @extend %d-flex;
+          flex-wrap: wrap;
+        }
+        &__content {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding-bottom: 3.8rem;
+        }
+        &__list {
+          @include flex-width(276px);
+          margin-left: 4.4rem;
+          padding: 1.7rem 1rem 0;
+          background-color: rgb(0 128 221 / 0%);
+          box-shadow: inset -1px 0 20px 0 #5281f01a;
+        }
+
+        // Chat Content
+        .chat-text__wrap {
+          max-height: 680px;
+          overflow-y: auto;
+        }
+        &__text {
+          margin-top: 45px;
+          @extend %d-flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          .chat__avatar {
+            margin-left: 0;
+            margin-right: 1.6rem;
+          }
+          .chat-text__body {
+            margin-right: 2.4rem;
+            padding: 1rem 2.4rem;
+            font-size: 1.4rem;
+            color: #000;
+            background-color: rgba(0, 128, 221, .1);
+            border-radius: 0 1.8rem 1.8rem 1.8rem;
+            max-width: 57.4rem;
+          }
+          .chat-text__date {
+            font-size: 1.3rem;
+            color: $primaryColor;
+            opacity: 0.7;
+            min-width: 6.4rem;
+          }
+
+          // Self Chat
+          &.chat__text__self {
+            margin-top: 45px;
+            flex-direction: row-reverse;
+            .chat__avatar {
+              margin-right: 0;
+              margin-left: 2rem;
+            }
+            .chat-text__body {
+              margin-left: 1.3rem;
+              margin-right: 0;
+              color: #fff;
+              background-color: $primaryColor;
+              border-radius: 1.8rem 0 1.8rem 1.8rem;
+            }
+            .chat-text__date {
+              font-size: 1.3rem;
+              color: $primaryColor;
+              opacity: 0.7;
+            }
+          }
+
+          // Pending
+          &.chat__text__pending {
+            margin-top: 2.6rem;
+            .chat-text__body {
+              @extend %d-flex;
+              align-items: center;
+              padding: 1.6rem 2.6rem;
+              i {
+                color: $primaryColor;
+                font-size: 1rem;
+                margin-right: 5px;
+                &:nth-child(1) {
+                  font-size: 1.8rem;
+                }
+              }
+            }
+          }
+        }
+        // End chat Content
+
+        // Chat Input
+        &-actions {
+          @extend %d-flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-left: 50px;
+          margin-top: 3.4rem;
+        }
+
+        &__input {
+          flex: 1;
+          @extend %d-flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-right: 2.4rem;
+          height: 4.8rem;
+          border-radius: .9rem;
+          box-shadow: 0 10px 15px -4px rgba(0, 0, 0, 0.1);
+          background-color: #fff;
+          .input {
+            flex: 1;
+            border-radius: .9rem 0 0 .9rem;
+            padding: 1.6rem;
+            font-size: 1.4rem;
+            border: 0;
+            @extend %styleInput;
+          }
+        }
+
+        &__avatar {
+          margin-left: 2rem;
+          img {
+            display: block;
+            max-width: 36px;
+            min-width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+        // End chat Input
+
+
+        // Chat Search
+        &__search {
+          @extend %d-flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-bottom: 1.8rem;
+          padding-left: 1.2rem;
+          background-color: rgba(2,45,77, .1);
+          border-radius: 4px;
+          input {
+            border: 0;
+            background-color: transparent;
+            font-size: 1.2rem;
+            padding: 1.2rem;
+            @extend %styleInput;
+          }
+        }
+        &-person {
+          .person {
+            &__card {
+              @extend %d-flex;
+              padding: 1.6rem 0.9rem 2.5rem;
+              border-bottom: 0.9px solid rgba(2,45,77,0.1);
+              &:first-child {
+                border-top: 0.9px solid rgba(2,45,77,0.1);
+              }
+            }
+
+            &__card--active {
+              background-color: $primaryColor;
+              border-radius: 9px;
+              position: relative;
+              z-index: 2;
+              .person__name, .person__subtitle, .person__date, .person__description {
+                color: #fff;
+                opacity: 1;
+              }
+              &:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: -2px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #fff;
+              }
+            }
+
+            &__body {
+              flex: 1;
+            }
+
+            &__avatar {
+              margin-right: 1.1rem;
+              img {
+                display: block;
+                max-width: 36px;
+                min-width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                object-fit: cover;
+              }
+            }
+
+            &__title {
+              @extend %d-flex;
+              justify-content: space-between;
+            }
+
+            &__name, &__subtitle, &__date, &__description {
+              font-size: 1.3rem;
+              color: $primaryColor;
+              font-family: $fontCarosMedium;
+            }
+            &__subtitle {
+              font-size: 1.1rem;
+              opacity: .7;
+            }
+            &__date {
+              font-size: 1.1rem;
+              opacity: .4;
+              padding-top: 3px;
+            }
+            &__description {
+              margin-top: 1rem;
+              span {
+                display: block;
+                font-size: 1.1rem;
+                height: 13px;
+                overflow: hidden;
+              }
+            }
+          }
+        }
+        // End Chat Search
+
+        // Calender
+        &-calendar {
+          margin: 5rem -1rem 0;
+          @extend %CalendarStyle;
+        }
+        // End Calender
+      }
+    }
+    // End Section Chat
+
+    // Section Members
+    &__member {
+      border-radius: 2rem;
+      padding: 2rem;
+      border: 1px solid rgba(136, 166, 181, 0.4);
+      .container-master {
+        padding: 0;
+      }
+
+      .teams__title i {
+        color: #5282F0;
+      }
+
+      .member {
+        &__card {
+          border-radius: 1rem;
+          background-color: rgba(0, 128, 221, 0.1);
+          padding: 1.8rem 1.6rem;
+        }
+        &__header {
+          @extend %d-flex;
+          @extend %threeDot;
+          justify-content: space-between;
+          align-items: center;
+          h4 {
+            color: #000;
+            font-size: 1.6rem;
+            font-family: $fontCarosBold;
+          }
+        }
+        &__status {
+          margin: 1.2rem 0;
+          @extend %status;
+          span {
+            margin: 0;
+          }
+        }
+        &-project {
+          @extend %d-flex;
+          justify-content: space-between;
+          margin-bottom: 1.5rem;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          a {
+            font-size: 1.4rem;
+            color: #000;
+            &:hover {
+              color: $secondaryColor;
+            }
+          }
+          .member-project__viewall {
+            font-family: $fontCarosBold;
+          }
+          i {
+            margin-left: 8px;
+            color: $secondaryColor;
+          }
+        }
+        &-project__name {
+          font-size: 1.4rem;
+          margin-bottom: 4px;
+          color: #000;
+          text-transform: uppercase;
+        }
+        &-project__description {
+          font-size: 1.4rem;
+          color: $primaryColor;
+          opacity: 0.7;
+        }
+      }
+    }
+    // End Section Members
+
+    // Section Water
+    &__water {
+      padding: 2rem;
+      border: 1px solid $secondaryColor;
+      border-radius: 2rem;
+      .container-master {
+        padding: 0;
+      }
+
+      .teams__title i {
+        color: #5282F0;
+      }
+
+      .water {
+
+        &__content {
+          @extend %d-flex;
+          flex-wrap: wrap;
+        }
+        // LEFT
+        &-project__title {
+          @extend %threeDot;
+          @extend %d-flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 2rem 2.4rem 2.8rem 3rem;
+          border-bottom: 1px solid rgba(2, 45, 77, 0.1);
+          h4 {
+            font-size: 1.6rem;
+            font-family: $fontCarosBold;
+          }
+        }
+        &__left {
+          @include flex-width(280px);
+          margin-right: 4rem;
+        }
+        &-list__project {
+          @extend %boxShadow;
+          margin-bottom: 2.4rem;
+
+          ul {
+            padding: 2.3rem 2.4rem 2.4rem 3rem;
+            li {
+              @extend %d-flex;
+              justify-content: flex-start;
+              align-items: center;
+            }
+            li:not(:last-child) {
+              margin-bottom: 3rem;
+            }
+
+            span {
+              display: block;
+            }
+
+            .water__character {
+              margin-right: 2.3rem;
+              width: 2.3rem;
+              height: 2.3rem;
+              border-radius: 50%;
+              border: 1px solid $secondaryColor;
+              background-color: rgba(207, 170, 64, 0.1);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .water__character, .water__name, .water__count {
+              font-size: 1.3rem;
+              font-family: $fontCarosMedium;
+            }
+            .water__count {
+              margin-left: auto;
+              opacity: 0.7;
+            }
+          }
+        }
+        &__calendar {
+          @extend %CalendarStyle;
+        }
+        // END LEFT
+
+        // RIGHT
+        &__right {
+          flex: 1;
+        }
+        &-add__status {
+          @extend %boxShadow;
+          margin-bottom: 2rem;
+
+          .add {
+            &__actions {
+              padding: 2rem;
+              border-bottom: 1px solid rgba(2, 45, 77, 0.1);
+            }
+            &__status {
+              @extend %d-flex;
+              margin-bottom: 2rem;
+              button {
+                margin-right: 3rem;
+                color: $primaryColor;
+                opacity: .7;
+                font-size: 1.4rem;
+                font-family: $fontCarosMedium;
+                display: block;
+                cursor: pointer;
+                background: transparent;
+                border: 0;
+                outline: 0;
+                &:hover {
+                  color: $secondaryColor;
+                }
+
+                &.active {
+                  color: #fff;
+                  padding: .6rem 1.2rem;
+                  border-radius: 10rem;
+                  background-color:$secondaryColor;
+                }
+              }
+            }
+            &__form {
+              @extend %d-flex;
+              justify-content: center;
+              align-items: center;
+            }
+            &__avatar {
+              margin-right: 1.6rem;
+              img {
+                max-width: 40px;
+                min-width: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+              }
+            }
+            &__input {
+              @extend %styleInput;
+              font-size: 1.4rem;
+              font-family: $fontCarosMedium;
+              border: 0;
+              padding: 1.2rem 0;
+            }
+
+            &__features {
+              padding: 1.2rem 2rem;
+              @extend %d-flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-wrap: wrap;
+              ul {
+                @extend %d-flex;
+                justify-content: space-between;
+                align-items: center;
+                li {
+                  margin-right: 2.3rem;
+                  a {
+                    @extend %d-flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    color: #000;
+                    &:hover {
+                      span {
+                        color: $primaryColor;
+                      }
+                    }
+                  }
+                  img {
+                    margin-right: 1rem;
+                  }
+                  span {
+                    font-size: 1.4rem;
+                    font-family: $fontCarosMedium;
+                  }
+                }
+              }
+
+              .btn-add__submit {
+                @extend %btn-animation;
+                cursor: pointer;
+                outline: 0;
+                border: 0;
+                background-color: $primaryColor;
+                color: #fff;
+                padding: 1rem 2.7rem;
+                text-transform: uppercase;
+                border-radius: 4px;
+                span {
+                  padding: 0;
+                }
+              }
+            }
+          }
+        }
+        &-newfeed__item {
+          @extend %boxShadow;
+          padding: 2.4rem 2rem 2rem;
+
+          .item-header__avatar, .item-comment__avatar {
+            img {
+              max-width: 40px;
+              min-width: 40px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+
+          .newfeed-item {
+            &__header {
+              @extend %d-flex;
+              align-items: center;
+              justify-content: flex-start;
+              .item-header__avatar {
+                margin-right: 1.2rem;
+              }
+
+              .head-info {
+                margin-bottom: 1px;
+                .name, .act {
+                  font-size: 1.4rem;
+                  font-family: $fontCarosMedium;
+                }
+                .act {
+                  opacity: 0.7;
+                  color: $primaryColor;
+                }
+              }
+              .head-time {
+                font-size: 1rem;
+                font-family: $fontCarosBold;
+                color: $primaryColor;
+                opacity: 0.7;
+              }
+
+              .btn-head {
+                margin-left: auto;
+                @extend %threeDot;
+              }
+            }
+
+            &__content {
+              .text, .img {
+                margin: 2rem 0;
+              }
+              .text {
+                span {
+                  font-size: 1.4rem;
+                }
+              }
+              .img img {
+                border-radius: 8px;
+              }
+            }
+
+            &__reaction {
+              ul {
+                @extend %d-flex;
+                align-items: center;
+                justify-content: flex-start;
+                li {
+                  margin-right: 3.2rem;
+                }
+
+                a, i {
+                  color: $primaryColor;
+                  opacity: 0.7;
+                }
+
+                span {
+                  font-size: 1.4rem;
+                  font-family: $fontCarosMedium;
+                  color: $primaryColor;
+                  opacity: 0.7;
+                }
+              }
+            }
+
+            &__comment {
+              margin-top: 2.4rem;
+              @extend %d-flex;
+              align-items: center;
+              justify-content: flex-start;
+              .item-comment__avatar {
+                margin-right: 20px;
+              }
+              .form {
+                background-color: rgba(0, 128, 221, 0.03);
+                border: 1px solid rgba(0, 128, 221, 0.1);
+                border-radius: 8rem;
+                flex: 1;
+                padding: 0 2rem;
+
+                @extend %d-flex;
+                justify-content: space-between;
+                align-items: center;
+
+                input {
+                  border: 0;
+                  outline:0;
+                  color: #000;
+                  background-color: transparent;
+                  width: 100%;
+                  height: 100%;
+                  font-size: 1.4rem;
+                  padding: 1rem 0;
+
+                  &:focus {
+                    border: 0;
+                    outline: 0;
+                  }
+
+                  &::-webkit-input-placeholder { /* Edge */
+                    color: #000;
+                  }
+
+                  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    color: #000;
+                  }
+
+                  &::placeholder {
+                    color: #000;
+                  }
+                }
+
+                ul {
+                  @extend %d-flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                  li {
+                    margin-left: 1rem;
+                  }
+                  a, i {
+                    color: $primaryColor;
+                  }
+                }
+              }
+            }
+          }
+        }
+        // END RIGHT
+      }
+    }
+    // End Section Water
+  }
+}
+
+@include desktop1200 {
+}
+
+@include tablet980 {
+  .tpl-teams {
+    .section__chat .chat__list {
+      @include flex-width(100%);
+      margin-left: 0;
+    }
+    .section__water .water__left {
+      margin-right: 0;
+      @include flex-width(100%);
+    }
+  }
+}
+
+@include tablet768 {
+  .tpl-teams {
+    .section__project, .tpl-teams .section__member {
+      .col-12 {
+        margin-bottom: 2rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .section__chat .chat-actions {
+      padding-left: 0;
+    }
+  }
+}
+@include mobile480 {
+  .tpl-teams {
+    .section__layout .teams__title h2 {
+      font-size: 1.8rem;
+    }
+
+    .section__chat {
+      .chat-actions {
+        padding-left: 0;
+      }
+      .chat__text .chat-text__body {
+        margin-right: 1.4rem;
+        padding: 1.2rem;
+        font-size: 1.4rem;
+      }
+    }
+
+    .section__water {
+      .water-add__status .add__status button {
+        margin-right: 1rem;
+        font-size: 1.2rem;
+      }
+      .water-add__status {
+        .add__features ul {
+          margin-bottom: 1.4rem;
+          li span {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .section__member, .section__water, .section__project, .section__chat {
+        padding: 2rem 1.2rem;
+      }
+    }
+  }
+}

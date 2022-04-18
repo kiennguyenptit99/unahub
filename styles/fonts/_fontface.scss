@@ -1,0 +1,19 @@
+/*Import Font*/
+@mixin font-face($font-family, $url, $weight, $style) {
+  @font-face {
+    font-family: '#{$font-family}';
+    src: local('#{$font-family}'), url('#{$url}') format('truetype');
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+  }
+}
+// Averta Font
+@include font-face("Averta","../fonts/Averta/Averta-Regular.otf",normal, normal );
+@include font-face("Averta-Light","../fonts/Averta/Averta-Light.otf",normal, normal );
+
+// Caros Font
+@include font-face("Caros","../fonts/Caros/Caros.otf",normal, normal );
+@include font-face("Caros-Thin","../fonts/Caros/Caros-Thin.otf",normal, normal );
+@include font-face("Caros-Medium","../fonts/Caros/Caros-Medium.otf",normal, normal );
+@include font-face("Caros-Bold","../fonts/Caros/Caros-Bold.otf",normal, normal );

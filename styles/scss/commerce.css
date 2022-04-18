@@ -1,0 +1,343 @@
+.commerce-card .card__actions a span, .commerce-card .card__actions a {
+  transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+}
+
+.commerce-card .card__header, .search__commerce .search__box, .header__commerce .nav__item--special, .header__commerce .nav__list {
+  display: flex;
+}
+
+.commerce-card .card__actions a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background: #022d4d;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.commerce-card .card__actions a:after, .commerce-card .card__actions a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 50%;
+  width: 0;
+  background: #005391;
+  opacity: 0.6;
+  transition: width 0.3s ease-in-out;
+}
+.commerce-card .card__actions a:before {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.commerce-card .card__actions a span,
+.commerce-card .card__actions a a {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  padding: 10px 30px;
+  display: block;
+  color: #fff;
+}
+.commerce-card .card__actions a:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+.commerce-card .card__actions a:hover span {
+  color: #fff;
+}
+.commerce-card .card__actions a:hover:after, .commerce-card .card__actions a:hover:before {
+  width: 100%;
+}
+
+.commerce__title, .section__titlepage {
+  margin: 40px 0;
+}
+.commerce__title span, .section__titlepage span {
+  font-size: 4rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  color: #000;
+  border-bottom: 5px solid #88a6b5;
+}
+@media (max-width: 1200px) {
+  .commerce__title, .section__titlepage {
+    margin-bottom: 3rem;
+  }
+  .commerce__title span, .section__titlepage span {
+    font-size: 3rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+@media (max-width: 768px) {
+  .commerce__title, .section__titlepage {
+    margin-bottom: 2.6rem;
+  }
+  .commerce__title span, .section__titlepage span {
+    font-size: 2.4rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+
+/*Mixin Responsive*/
+.commerce-card .card__actions a, .commerce-card .card__actions a span {
+  transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+}
+
+.commerce-card .card__header, .search__commerce .search__box, .header__commerce .nav__item--special, .header__commerce .nav__list {
+  display: flex;
+}
+
+.commerce-card .card__actions a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background: #022d4d;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.commerce-card .card__actions a:after, .commerce-card .card__actions a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 50%;
+  width: 0;
+  background: #005391;
+  opacity: 0.6;
+  transition: width 0.3s ease-in-out;
+}
+.commerce-card .card__actions a:before {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.commerce-card .card__actions a span,
+.commerce-card .card__actions a a {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  padding: 10px 30px;
+  display: block;
+  color: #fff;
+}
+.commerce-card .card__actions a:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+.commerce-card .card__actions a:hover span {
+  color: #fff;
+}
+.commerce-card .card__actions a:hover:after, .commerce-card .card__actions a:hover:before {
+  width: 100%;
+}
+
+.commerce__title, .section__titlepage {
+  margin: 40px 0;
+}
+.commerce__title span, .section__titlepage span {
+  font-size: 4rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  color: #000;
+  border-bottom: 5px solid #88a6b5;
+}
+@media (max-width: 1200px) {
+  .commerce__title, .section__titlepage {
+    margin-bottom: 3rem;
+  }
+  .commerce__title span, .section__titlepage span {
+    font-size: 3rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+@media (max-width: 768px) {
+  .commerce__title, .section__titlepage {
+    margin-bottom: 2.6rem;
+  }
+  .commerce__title span, .section__titlepage span {
+    font-size: 2.4rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+
+.header__commerce {
+  background-color: #022d4d;
+}
+.header__commerce .nav__list {
+  padding: 1rem 0 0.4rem;
+  flex-wrap: wrap;
+}
+.header__commerce .nav__list .nav__item {
+  position: relative;
+  margin: 0 1.2rem 1rem 0;
+  background-color: #fff;
+  color: #022d4d;
+}
+.header__commerce .nav__list .nav__item .menu__list__item {
+  display: flex;
+  align-items: center;
+}
+.header__commerce .nav__list .nav__item label {
+  color: #000;
+  flex-grow: 1;
+  margin-left: 4px;
+}
+.header__commerce .nav__list .active {
+  color: #fff;
+  background-color: #cfaa40;
+}
+.header__commerce .nav__list .show__type .menu__list {
+  display: block;
+}
+.header__commerce .nav__list .menu__list {
+  top: 55px;
+  right: 0px;
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  padding: 17px 23px 17px 17px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 7px 12px 0;
+}
+.header__commerce .nav__list .menu__list .menu__list__item {
+  border-color: #839aa3;
+  padding-bottom: 18px;
+}
+.header__commerce .nav__list .menu__list .menu__list__item input {
+  width: 25px;
+  height: 25px;
+  border-color: #839aa3;
+}
+.header__commerce .nav__list .menu__list .menu__list__item label {
+  color: #28536b;
+}
+.header__commerce .nav__list .menu__list .menu__list__item1 {
+  display: flex;
+  justify-content: space-between;
+}
+.header__commerce .nav__list .menu__list .menu__list__item1 .buttonclear {
+  border: none;
+  background-color: #fff;
+  font-style: italic;
+}
+.header__commerce .nav__list .menu__list .menu__list__item1 .buttonapply {
+  color: #fff;
+  background-color: #022d4d;
+  border: 0;
+  outline: none;
+  padding: 9px 12px 9px 12px;
+  border-radius: 5px;
+}
+.header__commerce .nav__item--special a:first-child {
+  margin-right: 0;
+  background-color: #cfaa40;
+  color: #fff;
+  border-radius: 2px 0 0 2px;
+}
+.header__commerce .nav__item--special a:last-child {
+  border-radius: 0 2px 2px 0;
+}
+.header__commerce .nav__link {
+  padding: 1rem 1.4rem;
+  display: block;
+  border-radius: 2px;
+  color: inherit;
+}
+
+.commerce__wrapper {
+  margin-bottom: 70px;
+}
+
+.commerce__banner img {
+  width: 100%;
+}
+
+.search__commerce {
+  display: none;
+  margin-bottom: 20px;
+}
+.search__commerce .search__box {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 2px;
+}
+.search__commerce .search__box .search__input {
+  border: 1px solid #f1f4f6;
+}
+.search__commerce .search__box .search__icon {
+  padding: 0 0 0 24px;
+  font-size: 17px;
+}
+.search__commerce .search__box .search__icon i {
+  color: #022d4d;
+}
+.search__commerce .search__box input {
+  border: 0;
+  outline: none;
+  font-size: 1.4rem;
+  color: #022d4d;
+  padding: 1rem 1.4rem;
+  width: 36rem;
+}
+.search__commerce .search__box button {
+  border: 0;
+  outline: none;
+  color: #fff;
+  background-color: #cfaa40;
+  padding: 12px 40px;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+}
+.search__commerce .search__box button:hover {
+  background-color: #b78c13;
+}
+
+.show__brand {
+  display: block;
+}
+
+.commerce-card {
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 2px solid #cfaa40;
+  margin-bottom: 3rem;
+}
+.commerce-card .card__header .card__image {
+  width: 10rem;
+  margin-right: 1.2rem;
+}
+.commerce-card .card__header .card__image img {
+  border-radius: 2px;
+}
+.commerce-card .card__header .card__title {
+  display: flex;
+  align-items: center;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+}
+.commerce-card .card__copy {
+  color: #022d4d;
+  font-size: 1.4rem;
+  margin: 1.6rem 0 1rem;
+  height: 6.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.commerce-card .card__actions a {
+  text-transform: uppercase;
+}
+.commerce-card .card__actions a span {
+  font-weight: 300;
+}/*# sourceMappingURL=commerce.css.map */

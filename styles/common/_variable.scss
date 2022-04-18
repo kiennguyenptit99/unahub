@@ -1,0 +1,297 @@
+$primaryColor: #022d4d;
+$secondaryColor: #cfaa40;
+$black: #000;
+$white: #fff;
+$fontAverta: 'Averta', Arial, Helvetica, sans-serif;
+$fontAvertaLight: 'Averta-Light', Arial, Helvetica, sans-serif;
+$fontCaros: 'Caros', Arial, Helvetica, sans-serif;
+$fontCarosMedium: 'Caros-Medium', Arial, Helvetica, sans-serif;
+$fontCarosBold: 'Caros-Bold', Arial, Helvetica, sans-serif;
+
+%transition {
+  transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+}
+
+%d-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+%imgdev {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+%text-overflow {
+  display: block;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+%btn-animation {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background: $primaryColor;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  @extend %transition;
+
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 50%;
+    width: 0;
+    background: #005391;
+    opacity: 0.6;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:before {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+  }
+
+  span,
+  a {
+    position: relative;
+    z-index: 2;
+    font-weight: 600;
+    padding: 10px 30px;
+    display: block;
+    color: #fff;
+    @extend %transition;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+
+    span {
+      color: $white;
+    }
+
+    &:after,
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+%asideCommon {
+  .aside {
+    &__card {
+      padding: 25px 20px 20px;
+      border-radius: 20px;
+      border: 2px solid $secondaryColor;
+      margin-bottom: 20px;
+
+      &__title span {
+        font-size: 2rem;
+        color: $black;
+        font-family: $fontCarosBold;
+      }
+
+      &__body {
+        margin: 10px 0 25px;
+
+        span {
+          font-size: 1.4rem;
+          color: $black;
+          font-family: $fontCaros;
+        }
+      }
+
+      &__actions {
+        button {
+          @extend %btn-animation;
+          width: 100%;
+
+          span {
+            @extend %d-flex;
+            align-items: center;
+            color: $white;
+            font-family: $fontAverta;
+            text-transform: uppercase;
+
+            img {
+              transform: translate(-5px, 2px);
+              height: 15px;
+              width: auto;
+            }
+          }
+        }
+
+        a {
+          @extend %btn-animation;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+          height:40px;
+
+          span {
+            color: $white;
+            font-family: $fontAverta;
+            text-transform: uppercase;
+            padding: 0 !important;
+          }
+
+          &:hover {
+            img {
+              z-index: 3;
+            }
+          }
+          img {
+            transform: translate(-5px, 2px);
+            height: 15px;
+            width: auto;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      &__card {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+%styleTitle {
+  margin: 40px 0;
+
+  span {
+    font-size: 4rem;
+    font-family: $fontCarosBold;
+    color: #000;
+    border-bottom: 5px solid #88a6b5;
+  }
+
+  @media (max-width: 1200px) {
+    margin-bottom: 3rem;
+    span {
+      font-size: 3rem;
+      border-bottom: 3px solid #88a6b5;
+    }
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 2.6rem;
+    span {
+      font-size: 2.4rem;
+      border-bottom: 3px solid #88a6b5;
+    }
+  }
+}
+
+%stylecontentBox {
+  border: 1px #88a6b5 solid;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  .title_box {
+    font-family: $fontCarosBold;
+    font-size: 2rem;
+  }
+  .buttonViewAll {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    &:hover {
+      color: $secondaryColor;
+    }
+    i {
+      color: #cfaa40;
+    }
+  }
+  @media (max-width: 480px) {
+    .title_box {
+      font-size: 1.8rem;
+    }
+    .buttonViewAll {
+      font-size: 12px !important;
+      i {
+        font-size: 11px;
+      }
+    }
+  }
+}
+%sectionMeetings {
+  .meetings {
+    &--content {
+      @extend %stylecontentBox;
+    }
+    &__item {
+      display: flex;
+      margin-top: 20px;
+      .time__meeting {
+        width: max-content;
+        color: $primaryColor;
+      }
+      &--content {
+        width: calc(100% - 94px);
+        margin-left: 30px;
+        background: $primaryColor;
+        border-radius: 10px;
+        color: #fff;
+        padding: 15px;
+        display: flex;
+      }
+      &--right {
+        text-align: right;
+      }
+      &--left {
+        width: calc(100% - 90px);
+        h3 {
+          font-size: 1.7rem;
+          font-family: $fontCarosBold;
+        }
+        p {
+          margin-bottom: 7px;
+          a {
+            font-size: 1.4rem;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+%stylebuttonstatus {
+  width: 70px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #cfaa40;
+  color: #fff;
+  font-family: 'Caros-Bold', Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+.section__titlepage {
+  @extend %styleTitle;
+}

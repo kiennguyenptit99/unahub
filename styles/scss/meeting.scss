@@ -1,0 +1,264 @@
+@import '../common/mixin';
+@import '../common/variable';
+
+// Header 2
+@import './header-2';
+// End Header 2
+
+.header__alert{
+    background: $secondaryColor;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    &__content{
+        display: flex;
+        p{
+            font-size: 14px;
+            color: #fff;
+            margin-left: 10px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        height: unset;
+        padding: 8px 0;
+    }
+}
+//Meeting
+main{
+@extend %sectionMeetings;
+}
+//Video Bar
+.videobars{
+    margin-top: 30px;
+
+    &__content{
+        @extend %stylecontentBox;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__list{
+        display: grid;
+        margin-top: 15px;
+        grid-template-areas:
+            "grid1 grid2 grid3"
+            "grid1 grid4 grid5";
+        .videobars__video {
+            position: relative;
+            a {
+                width: 100%;
+            }
+            &:hover {
+                .btn__play i {
+                    color: $secondaryColor;
+                }
+            }
+            .btn__play {
+                width: 7.2rem;
+                height: 7.2rem;
+                border-radius: 50%;
+                background: $primaryColor;
+                position: absolute;
+                left: calc(50% - 3.6rem);
+                top: calc(50% - 3.6rem);
+                @extend %d-flex;
+                justify-content: center;
+                align-items: center;
+                i {
+                    color: #fff;
+                    font-size: 4rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        .videobars__video:nth-child(1) {
+            grid-area: grid1;
+            width: 50.8rem;
+            height: 36.6rem;
+            margin: 0 1.6rem 0 0;
+        }
+        .videobars__video:nth-child(2) {
+            grid-area: grid2;
+            // width: 30.5rem;
+            height: 17.5rem;
+            margin: 0 1.6rem 1.6rem 0;
+        }
+        .videobars__video:nth-child(3) {
+            grid-area: grid3;
+            // width: 30.5rem;
+            height: 17.5rem;
+        }
+        .videobars__video:nth-child(4) {
+            grid-area: grid4;
+            // width: 30.5rem;
+            height: 17.5rem;
+            margin-right: 1.6rem;
+        }
+        .videobars__video:nth-child(5) {
+            grid-area: grid5;
+            // width: 30.5rem;
+            height: 17.5rem;
+        }
+    }
+    &__video{
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        .started{
+            @extend %btn-animation;
+            background: $primaryColor;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 235px !important;
+            bottom: 30px;
+            border-radius: 10px;
+            position: absolute;
+            span {
+                padding: 0;
+            }
+        }
+    }
+}
+
+
+
+//boxPastMeeting__Notes
+.pastmeetingnotes{
+    margin-top: 30px;
+    margin-bottom: 140px;
+    &__content{
+        position: relative;
+        @extend %stylecontentBox;
+        a.buttonViewAll svg {
+            position: relative;
+            top: 4px;
+            margin-left: 8px;
+        }
+    }
+    &__list--meeting{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        &--item{
+            width: calc(100%/2 - 8px);
+            height: 115px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $secondaryColor;
+            border-radius: 10px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            .date{
+                font-size: 1.6rem;
+                text-align: center;
+                font-family: $fontCarosBold;
+                margin-bottom: 1.4rem;
+            }
+            .time {
+                font-size: 1.4rem;
+                text-align: center;
+            }
+        }
+        &--item:nth-child(even){
+            margin-right: 0;
+        }
+    }
+    &__list--notes{
+        margin-top: 15px;
+        &--item{
+            border-radius: 10px;
+            overflow: hidden;
+            height: 115px;
+            position: relative;
+            margin-bottom: 15px;
+            background: #0080dd3d;
+            .titleNotes{
+                padding: 15px 0 5px 15px;
+                font-size: 16px;
+                font-weight: 600;
+                a{    color: black;                }
+            }
+            .date{
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                font-weight: 600;
+            }
+            p.content{
+                padding: 0 15px;
+                color: $primaryColor;
+                max-height: 60px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+
+@include desktop1200 {
+    .videobars__list .videobars__video:nth-child(1) {
+        width: 44rem;
+    }
+    .meetings .meetings--content , .pastmeetingnotes .pastmeetingnotes__content {
+        &:first-child{margin-bottom: 30px;}
+    }
+}
+@include desktop1024{
+
+}
+@include tablet980 {
+    .videobars__list {
+        grid-template-areas:
+        "grid1 grid1"
+        "grid2 grid3"
+        "grid4 grid5";
+    }
+    .videobars__list .videobars__video:nth-child(1) {
+        width: 100%;
+        margin: 0 0 1.6rem;
+    }
+    .ScheduleTeam {
+        margin-bottom: 2rem;
+    }
+}
+
+@include tablet768 {
+    .videobars__list {
+        display: block;
+    }
+    .videobars__list .videobars__video {
+        width: 100%;
+        height: unset !important;
+        margin: 0 0 1.6rem;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    .leftPastMeeting {
+        margin-bottom: 2rem;
+    }
+}
+
+@include mobile480 {
+    .titlebox, .MeetingScheduleTeam__orIndividual .contentBoxMeetings .title_boxMeetings{
+        font-size: 1.8rem;
+    }
+        main .meetings__item--content {
+          width: calc(100% - 79px);
+          margin-left: 15px;
+        }
+        .section__tasksmeeting .meetings__item--left {
+          h3 {    font-size: 1.5rem;    }
+          p a{font-size: 1.2rem;}
+        }
+}

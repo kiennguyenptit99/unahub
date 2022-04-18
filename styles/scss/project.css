@@ -1,0 +1,1105 @@
+.header-2 .nav-sub__menu li a, .section__customlink__itemcontent .button__interlink span,
+.section__customlink__itemcontent .button__interlink a, .section__customlink__itemcontent .button__interlink {
+  transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+}
+
+.header-2 .nav__item > a, .header-2 .nav__list {
+  display: flex;
+}
+
+.section__customlink__itemcontent .button__interlink {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background: #022d4d;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.section__customlink__itemcontent .button__interlink:after, .section__customlink__itemcontent .button__interlink:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 50%;
+  width: 0;
+  background: #005391;
+  opacity: 0.6;
+  transition: width 0.3s ease-in-out;
+}
+.section__customlink__itemcontent .button__interlink:before {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.section__customlink__itemcontent .button__interlink span,
+.section__customlink__itemcontent .button__interlink a {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  padding: 10px 30px;
+  display: block;
+  color: #fff;
+}
+.section__customlink__itemcontent .button__interlink:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+.section__customlink__itemcontent .button__interlink:hover span {
+  color: #fff;
+}
+.section__customlink__itemcontent .button__interlink:hover:after, .section__customlink__itemcontent .button__interlink:hover:before {
+  width: 100%;
+}
+
+.topPageProject .titlePage, .section__titlepage {
+  margin: 40px 0;
+}
+.topPageProject .titlePage span, .section__titlepage span {
+  font-size: 4rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  color: #000;
+  border-bottom: 5px solid #88a6b5;
+}
+@media (max-width: 1200px) {
+  .topPageProject .titlePage, .section__titlepage {
+    margin-bottom: 3rem;
+  }
+  .topPageProject .titlePage span, .section__titlepage span {
+    font-size: 3rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+@media (max-width: 768px) {
+  .topPageProject .titlePage, .section__titlepage {
+    margin-bottom: 2.6rem;
+  }
+  .topPageProject .titlePage span, .section__titlepage span {
+    font-size: 2.4rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+
+.section__customlink__itemcontent, .section__statisticsnotes__statistics__wrap, .notes .pastmeetingnotes__content, .section__milestonesmeeting__milestones__content, .section__projects__content, .section__milestonesmeeting .meetings--content {
+  border: 1px #88a6b5 solid;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+.section__customlink__itemcontent .title_box, .section__statisticsnotes__statistics__wrap .title_box, .notes .pastmeetingnotes__content .title_box, .section__milestonesmeeting__milestones__content .title_box, .section__projects__content .title_box, .section__milestonesmeeting .meetings--content .title_box {
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.section__customlink__itemcontent .buttonViewAll, .section__statisticsnotes__statistics__wrap .buttonViewAll, .notes .pastmeetingnotes__content .buttonViewAll, .section__milestonesmeeting__milestones__content .buttonViewAll, .section__projects__content .buttonViewAll, .section__milestonesmeeting .meetings--content .buttonViewAll {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+.section__customlink__itemcontent .buttonViewAll:hover, .section__statisticsnotes__statistics__wrap .buttonViewAll:hover, .notes .pastmeetingnotes__content .buttonViewAll:hover, .section__milestonesmeeting__milestones__content .buttonViewAll:hover, .section__projects__content .buttonViewAll:hover, .section__milestonesmeeting .meetings--content .buttonViewAll:hover {
+  color: #cfaa40;
+}
+.section__customlink__itemcontent .buttonViewAll i, .section__statisticsnotes__statistics__wrap .buttonViewAll i, .notes .pastmeetingnotes__content .buttonViewAll i, .section__milestonesmeeting__milestones__content .buttonViewAll i, .section__projects__content .buttonViewAll i, .section__milestonesmeeting .meetings--content .buttonViewAll i {
+  color: #cfaa40;
+}
+@media (max-width: 480px) {
+  .section__customlink__itemcontent .title_box, .section__statisticsnotes__statistics__wrap .title_box, .notes .pastmeetingnotes__content .title_box, .section__milestonesmeeting__milestones__content .title_box, .section__projects__content .title_box, .section__milestonesmeeting .meetings--content .title_box {
+    font-size: 1.8rem;
+  }
+  .section__customlink__itemcontent .buttonViewAll, .section__statisticsnotes__statistics__wrap .buttonViewAll, .notes .pastmeetingnotes__content .buttonViewAll, .section__milestonesmeeting__milestones__content .buttonViewAll, .section__projects__content .buttonViewAll, .section__milestonesmeeting .meetings--content .buttonViewAll {
+    font-size: 12px !important;
+  }
+  .section__customlink__itemcontent .buttonViewAll i, .section__statisticsnotes__statistics__wrap .buttonViewAll i, .notes .pastmeetingnotes__content .buttonViewAll i, .section__milestonesmeeting__milestones__content .buttonViewAll i, .section__projects__content .buttonViewAll i, .section__milestonesmeeting .meetings--content .buttonViewAll i {
+    font-size: 11px;
+  }
+}
+
+.section__milestonesmeeting .meetings__item {
+  display: flex;
+  margin-top: 20px;
+}
+.section__milestonesmeeting .meetings__item .time__meeting {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #022d4d;
+}
+.section__milestonesmeeting .meetings__item--content {
+  width: calc(100% - 94px);
+  margin-left: 30px;
+  background: #022d4d;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+}
+.section__milestonesmeeting .meetings__item--right {
+  text-align: right;
+}
+.section__milestonesmeeting .meetings__item--left {
+  width: calc(100% - 90px);
+}
+.section__milestonesmeeting .meetings__item--left h3 {
+  font-size: 1.7rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.section__milestonesmeeting .meetings__item--left p {
+  margin-bottom: 7px;
+}
+.section__milestonesmeeting .meetings__item--left p a {
+  font-size: 1.4rem;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.section__projects__item .buttonstatus {
+  width: 70px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #cfaa40;
+  color: #fff;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+/*Mixin Responsive*/
+.header-2 .nav-sub__menu li a, .section__customlink__itemcontent .button__interlink, .section__customlink__itemcontent .button__interlink span,
+.section__customlink__itemcontent .button__interlink a {
+  transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+}
+
+.header-2 .nav__item > a, .header-2 .nav__list {
+  display: flex;
+}
+
+.section__customlink__itemcontent .button__interlink {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background: #022d4d;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.section__customlink__itemcontent .button__interlink:after, .section__customlink__itemcontent .button__interlink:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 50%;
+  width: 0;
+  background: #005391;
+  opacity: 0.6;
+  transition: width 0.3s ease-in-out;
+}
+.section__customlink__itemcontent .button__interlink:before {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.section__customlink__itemcontent .button__interlink span,
+.section__customlink__itemcontent .button__interlink a {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  padding: 10px 30px;
+  display: block;
+  color: #fff;
+}
+.section__customlink__itemcontent .button__interlink:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+.section__customlink__itemcontent .button__interlink:hover span {
+  color: #fff;
+}
+.section__customlink__itemcontent .button__interlink:hover:after, .section__customlink__itemcontent .button__interlink:hover:before {
+  width: 100%;
+}
+
+.topPageProject .titlePage, .section__titlepage {
+  margin: 40px 0;
+}
+.topPageProject .titlePage span, .section__titlepage span {
+  font-size: 4rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  color: #000;
+  border-bottom: 5px solid #88a6b5;
+}
+@media (max-width: 1200px) {
+  .topPageProject .titlePage, .section__titlepage {
+    margin-bottom: 3rem;
+  }
+  .topPageProject .titlePage span, .section__titlepage span {
+    font-size: 3rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+@media (max-width: 768px) {
+  .topPageProject .titlePage, .section__titlepage {
+    margin-bottom: 2.6rem;
+  }
+  .topPageProject .titlePage span, .section__titlepage span {
+    font-size: 2.4rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+
+.section__customlink__itemcontent, .section__statisticsnotes__statistics__wrap, .notes .pastmeetingnotes__content, .section__milestonesmeeting__milestones__content, .section__projects__content, .section__milestonesmeeting .meetings--content {
+  border: 1px #88a6b5 solid;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+.section__customlink__itemcontent .title_box, .section__statisticsnotes__statistics__wrap .title_box, .notes .pastmeetingnotes__content .title_box, .section__milestonesmeeting__milestones__content .title_box, .section__projects__content .title_box, .section__milestonesmeeting .meetings--content .title_box {
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.section__customlink__itemcontent .buttonViewAll, .section__statisticsnotes__statistics__wrap .buttonViewAll, .notes .pastmeetingnotes__content .buttonViewAll, .section__milestonesmeeting__milestones__content .buttonViewAll, .section__projects__content .buttonViewAll, .section__milestonesmeeting .meetings--content .buttonViewAll {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+.section__customlink__itemcontent .buttonViewAll:hover, .section__statisticsnotes__statistics__wrap .buttonViewAll:hover, .notes .pastmeetingnotes__content .buttonViewAll:hover, .section__milestonesmeeting__milestones__content .buttonViewAll:hover, .section__projects__content .buttonViewAll:hover, .section__milestonesmeeting .meetings--content .buttonViewAll:hover {
+  color: #cfaa40;
+}
+.section__customlink__itemcontent .buttonViewAll i, .section__statisticsnotes__statistics__wrap .buttonViewAll i, .notes .pastmeetingnotes__content .buttonViewAll i, .section__milestonesmeeting__milestones__content .buttonViewAll i, .section__projects__content .buttonViewAll i, .section__milestonesmeeting .meetings--content .buttonViewAll i {
+  color: #cfaa40;
+}
+@media (max-width: 480px) {
+  .section__customlink__itemcontent .title_box, .section__statisticsnotes__statistics__wrap .title_box, .notes .pastmeetingnotes__content .title_box, .section__milestonesmeeting__milestones__content .title_box, .section__projects__content .title_box, .section__milestonesmeeting .meetings--content .title_box {
+    font-size: 1.8rem;
+  }
+  .section__customlink__itemcontent .buttonViewAll, .section__statisticsnotes__statistics__wrap .buttonViewAll, .notes .pastmeetingnotes__content .buttonViewAll, .section__milestonesmeeting__milestones__content .buttonViewAll, .section__projects__content .buttonViewAll, .section__milestonesmeeting .meetings--content .buttonViewAll {
+    font-size: 12px !important;
+  }
+  .section__customlink__itemcontent .buttonViewAll i, .section__statisticsnotes__statistics__wrap .buttonViewAll i, .notes .pastmeetingnotes__content .buttonViewAll i, .section__milestonesmeeting__milestones__content .buttonViewAll i, .section__projects__content .buttonViewAll i, .section__milestonesmeeting .meetings--content .buttonViewAll i {
+    font-size: 11px;
+  }
+}
+
+.section__milestonesmeeting .meetings__item {
+  display: flex;
+  margin-top: 20px;
+}
+.section__milestonesmeeting .meetings__item .time__meeting {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #022d4d;
+}
+.section__milestonesmeeting .meetings__item--content {
+  width: calc(100% - 94px);
+  margin-left: 30px;
+  background: #022d4d;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+}
+.section__milestonesmeeting .meetings__item--right {
+  text-align: right;
+}
+.section__milestonesmeeting .meetings__item--left {
+  width: calc(100% - 90px);
+}
+.section__milestonesmeeting .meetings__item--left h3 {
+  font-size: 1.7rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.section__milestonesmeeting .meetings__item--left p {
+  margin-bottom: 7px;
+}
+.section__milestonesmeeting .meetings__item--left p a {
+  font-size: 1.4rem;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.section__projects__item .buttonstatus {
+  width: 70px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #cfaa40;
+  color: #fff;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.header-2 .nav-sub__menu li a, .section__customlink__itemcontent .button__interlink, .section__customlink__itemcontent .button__interlink span,
+.section__customlink__itemcontent .button__interlink a {
+  transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+}
+
+.header-2 .nav__item > a, .header-2 .nav__list {
+  display: flex;
+}
+
+.section__customlink__itemcontent .button__interlink {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background: #022d4d;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.section__customlink__itemcontent .button__interlink:after, .section__customlink__itemcontent .button__interlink:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 50%;
+  width: 0;
+  background: #005391;
+  opacity: 0.6;
+  transition: width 0.3s ease-in-out;
+}
+.section__customlink__itemcontent .button__interlink:before {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.section__customlink__itemcontent .button__interlink span,
+.section__customlink__itemcontent .button__interlink a {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  padding: 10px 30px;
+  display: block;
+  color: #fff;
+}
+.section__customlink__itemcontent .button__interlink:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+.section__customlink__itemcontent .button__interlink:hover span {
+  color: #fff;
+}
+.section__customlink__itemcontent .button__interlink:hover:after, .section__customlink__itemcontent .button__interlink:hover:before {
+  width: 100%;
+}
+
+.topPageProject .titlePage, .section__titlepage {
+  margin: 40px 0;
+}
+.topPageProject .titlePage span, .section__titlepage span {
+  font-size: 4rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  color: #000;
+  border-bottom: 5px solid #88a6b5;
+}
+@media (max-width: 1200px) {
+  .topPageProject .titlePage, .section__titlepage {
+    margin-bottom: 3rem;
+  }
+  .topPageProject .titlePage span, .section__titlepage span {
+    font-size: 3rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+@media (max-width: 768px) {
+  .topPageProject .titlePage, .section__titlepage {
+    margin-bottom: 2.6rem;
+  }
+  .topPageProject .titlePage span, .section__titlepage span {
+    font-size: 2.4rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+
+.section__customlink__itemcontent, .section__statisticsnotes__statistics__wrap, .notes .pastmeetingnotes__content, .section__milestonesmeeting__milestones__content, .section__projects__content, .section__milestonesmeeting .meetings--content {
+  border: 1px #88a6b5 solid;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+.section__customlink__itemcontent .title_box, .section__statisticsnotes__statistics__wrap .title_box, .notes .pastmeetingnotes__content .title_box, .section__milestonesmeeting__milestones__content .title_box, .section__projects__content .title_box, .section__milestonesmeeting .meetings--content .title_box {
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.section__customlink__itemcontent .buttonViewAll, .section__statisticsnotes__statistics__wrap .buttonViewAll, .notes .pastmeetingnotes__content .buttonViewAll, .section__milestonesmeeting__milestones__content .buttonViewAll, .section__projects__content .buttonViewAll, .section__milestonesmeeting .meetings--content .buttonViewAll {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+.section__customlink__itemcontent .buttonViewAll:hover, .section__statisticsnotes__statistics__wrap .buttonViewAll:hover, .notes .pastmeetingnotes__content .buttonViewAll:hover, .section__milestonesmeeting__milestones__content .buttonViewAll:hover, .section__projects__content .buttonViewAll:hover, .section__milestonesmeeting .meetings--content .buttonViewAll:hover {
+  color: #cfaa40;
+}
+.section__customlink__itemcontent .buttonViewAll i, .section__statisticsnotes__statistics__wrap .buttonViewAll i, .notes .pastmeetingnotes__content .buttonViewAll i, .section__milestonesmeeting__milestones__content .buttonViewAll i, .section__projects__content .buttonViewAll i, .section__milestonesmeeting .meetings--content .buttonViewAll i {
+  color: #cfaa40;
+}
+@media (max-width: 480px) {
+  .section__customlink__itemcontent .title_box, .section__statisticsnotes__statistics__wrap .title_box, .notes .pastmeetingnotes__content .title_box, .section__milestonesmeeting__milestones__content .title_box, .section__projects__content .title_box, .section__milestonesmeeting .meetings--content .title_box {
+    font-size: 1.8rem;
+  }
+  .section__customlink__itemcontent .buttonViewAll, .section__statisticsnotes__statistics__wrap .buttonViewAll, .notes .pastmeetingnotes__content .buttonViewAll, .section__milestonesmeeting__milestones__content .buttonViewAll, .section__projects__content .buttonViewAll, .section__milestonesmeeting .meetings--content .buttonViewAll {
+    font-size: 12px !important;
+  }
+  .section__customlink__itemcontent .buttonViewAll i, .section__statisticsnotes__statistics__wrap .buttonViewAll i, .notes .pastmeetingnotes__content .buttonViewAll i, .section__milestonesmeeting__milestones__content .buttonViewAll i, .section__projects__content .buttonViewAll i, .section__milestonesmeeting .meetings--content .buttonViewAll i {
+    font-size: 11px;
+  }
+}
+
+.section__milestonesmeeting .meetings__item {
+  display: flex;
+  margin-top: 20px;
+}
+.section__milestonesmeeting .meetings__item .time__meeting {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #022d4d;
+}
+.section__milestonesmeeting .meetings__item--content {
+  width: calc(100% - 94px);
+  margin-left: 30px;
+  background: #022d4d;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+}
+.section__milestonesmeeting .meetings__item--right {
+  text-align: right;
+}
+.section__milestonesmeeting .meetings__item--left {
+  width: calc(100% - 90px);
+}
+.section__milestonesmeeting .meetings__item--left h3 {
+  font-size: 1.7rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.section__milestonesmeeting .meetings__item--left p {
+  margin-bottom: 7px;
+}
+.section__milestonesmeeting .meetings__item--left p a {
+  font-size: 1.4rem;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.section__projects__item .buttonstatus {
+  width: 70px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #cfaa40;
+  color: #fff;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+/*Mixin Responsive*/
+.header-2 .nav-sub__menu li a, .section__customlink__itemcontent .button__interlink, .section__customlink__itemcontent .button__interlink span,
+.section__customlink__itemcontent .button__interlink a {
+  transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+}
+
+.header-2 .nav__item > a, .header-2 .nav__list {
+  display: flex;
+}
+
+.section__customlink__itemcontent .button__interlink {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background: #022d4d;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.section__customlink__itemcontent .button__interlink:after, .section__customlink__itemcontent .button__interlink:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 50%;
+  width: 0;
+  background: #005391;
+  opacity: 0.6;
+  transition: width 0.3s ease-in-out;
+}
+.section__customlink__itemcontent .button__interlink:before {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.section__customlink__itemcontent .button__interlink span,
+.section__customlink__itemcontent .button__interlink a {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  padding: 10px 30px;
+  display: block;
+  color: #fff;
+}
+.section__customlink__itemcontent .button__interlink:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+.section__customlink__itemcontent .button__interlink:hover span {
+  color: #fff;
+}
+.section__customlink__itemcontent .button__interlink:hover:after, .section__customlink__itemcontent .button__interlink:hover:before {
+  width: 100%;
+}
+
+.topPageProject .titlePage, .section__titlepage {
+  margin: 40px 0;
+}
+.topPageProject .titlePage span, .section__titlepage span {
+  font-size: 4rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  color: #000;
+  border-bottom: 5px solid #88a6b5;
+}
+@media (max-width: 1200px) {
+  .topPageProject .titlePage, .section__titlepage {
+    margin-bottom: 3rem;
+  }
+  .topPageProject .titlePage span, .section__titlepage span {
+    font-size: 3rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+@media (max-width: 768px) {
+  .topPageProject .titlePage, .section__titlepage {
+    margin-bottom: 2.6rem;
+  }
+  .topPageProject .titlePage span, .section__titlepage span {
+    font-size: 2.4rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+
+.section__customlink__itemcontent, .section__statisticsnotes__statistics__wrap, .notes .pastmeetingnotes__content, .section__milestonesmeeting__milestones__content, .section__projects__content, .section__milestonesmeeting .meetings--content {
+  border: 1px #88a6b5 solid;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+.section__customlink__itemcontent .title_box, .section__statisticsnotes__statistics__wrap .title_box, .notes .pastmeetingnotes__content .title_box, .section__milestonesmeeting__milestones__content .title_box, .section__projects__content .title_box, .section__milestonesmeeting .meetings--content .title_box {
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.section__customlink__itemcontent .buttonViewAll, .section__statisticsnotes__statistics__wrap .buttonViewAll, .notes .pastmeetingnotes__content .buttonViewAll, .section__milestonesmeeting__milestones__content .buttonViewAll, .section__projects__content .buttonViewAll, .section__milestonesmeeting .meetings--content .buttonViewAll {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+.section__customlink__itemcontent .buttonViewAll:hover, .section__statisticsnotes__statistics__wrap .buttonViewAll:hover, .notes .pastmeetingnotes__content .buttonViewAll:hover, .section__milestonesmeeting__milestones__content .buttonViewAll:hover, .section__projects__content .buttonViewAll:hover, .section__milestonesmeeting .meetings--content .buttonViewAll:hover {
+  color: #cfaa40;
+}
+.section__customlink__itemcontent .buttonViewAll i, .section__statisticsnotes__statistics__wrap .buttonViewAll i, .notes .pastmeetingnotes__content .buttonViewAll i, .section__milestonesmeeting__milestones__content .buttonViewAll i, .section__projects__content .buttonViewAll i, .section__milestonesmeeting .meetings--content .buttonViewAll i {
+  color: #cfaa40;
+}
+@media (max-width: 480px) {
+  .section__customlink__itemcontent .title_box, .section__statisticsnotes__statistics__wrap .title_box, .notes .pastmeetingnotes__content .title_box, .section__milestonesmeeting__milestones__content .title_box, .section__projects__content .title_box, .section__milestonesmeeting .meetings--content .title_box {
+    font-size: 1.8rem;
+  }
+  .section__customlink__itemcontent .buttonViewAll, .section__statisticsnotes__statistics__wrap .buttonViewAll, .notes .pastmeetingnotes__content .buttonViewAll, .section__milestonesmeeting__milestones__content .buttonViewAll, .section__projects__content .buttonViewAll, .section__milestonesmeeting .meetings--content .buttonViewAll {
+    font-size: 12px !important;
+  }
+  .section__customlink__itemcontent .buttonViewAll i, .section__statisticsnotes__statistics__wrap .buttonViewAll i, .notes .pastmeetingnotes__content .buttonViewAll i, .section__milestonesmeeting__milestones__content .buttonViewAll i, .section__projects__content .buttonViewAll i, .section__milestonesmeeting .meetings--content .buttonViewAll i {
+    font-size: 11px;
+  }
+}
+
+.section__milestonesmeeting .meetings__item {
+  display: flex;
+  margin-top: 20px;
+}
+.section__milestonesmeeting .meetings__item .time__meeting {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #022d4d;
+}
+.section__milestonesmeeting .meetings__item--content {
+  width: calc(100% - 94px);
+  margin-left: 30px;
+  background: #022d4d;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+}
+.section__milestonesmeeting .meetings__item--right {
+  text-align: right;
+}
+.section__milestonesmeeting .meetings__item--left {
+  width: calc(100% - 90px);
+}
+.section__milestonesmeeting .meetings__item--left h3 {
+  font-size: 1.7rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.section__milestonesmeeting .meetings__item--left p {
+  margin-bottom: 7px;
+}
+.section__milestonesmeeting .meetings__item--left p a {
+  font-size: 1.4rem;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.section__projects__item .buttonstatus {
+  width: 70px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #cfaa40;
+  color: #fff;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.header-2 {
+  background-color: #022d4d;
+}
+.header-2 .container-master {
+  height: 8.3rem;
+}
+.header-2 .nav__menu, .header-2 .nav__list {
+  height: 100%;
+}
+.header-2 .nav__list {
+  align-items: center;
+  justify-content: flex-start;
+}
+.header-2 .nav__item {
+  position: relative;
+  height: 100%;
+}
+.header-2 .nav__item.active > a {
+  color: #cfaa40;
+}
+.header-2 .nav__item > a {
+  font-size: 1.6rem;
+  color: #fff;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 9px;
+}
+.header-2 .nav__item > a:hover {
+  background-color: #0c3a63;
+}
+.header-2 .nav__item > a.active {
+  background-color: #0c3a63;
+}
+.header-2 .nav__item svg {
+  margin-top: 3px;
+  margin-left: 3px;
+}
+.header-2 .nav__item.dropdown .nav-sub__menu {
+  display: block;
+}
+.header-2 .nav__item.dropdown svg {
+  transform: rotate(-180deg);
+}
+.header-2 .nav-sub__menu {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  min-width: 28rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 0.4rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.header-2 .nav-sub__menu li a {
+  padding: 1rem 1.2rem;
+  color: #022d4d;
+  display: block;
+}
+.header-2 .nav-sub__menu li a:hover {
+  background-color: rgba(207, 169, 64, 0.3215686275);
+}
+
+@media (max-width: 1200px) {
+  .header-2 .container-master {
+    height: 5.4rem;
+  }
+
+  .header-2 .nav__item > a {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .header-2 .container-master {
+    height: unset;
+    padding: 0;
+  }
+  .header-2 .nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.4rem 0;
+  }
+  .header-2 .nav__item {
+    width: 100%;
+  }
+  .header-2 .nav__item > a {
+    padding: 1rem 1.4rem;
+    justify-content: space-between;
+  }
+  .header-2 .nav__item > a:hover {
+    background-color: #125285;
+  }
+  .header-2 .nav__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .header-2 .nav-sub__menu {
+    position: unset;
+    border: 0;
+  }
+  .header-2 .nav-sub__menu li a {
+    padding: 1rem 2.7rem;
+  }
+}
+.topPageProject {
+  margin-top: 5rem;
+}
+.searchProject .inputSearch {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.searchProject .inputSearch input {
+  width: 100%;
+  height: 38px;
+  padding: 0 15px;
+  background: #fff;
+  border: 1px solid #022d4d;
+  color: #022d4d;
+  font-size: 1.5rem;
+}
+.searchProject .inputSearch input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #022d4d;
+  opacity: 0.7;
+}
+.searchProject .inputSearch input::-moz-placeholder {
+  color: #022d4d;
+  opacity: 0.7;
+}
+.searchProject .inputSearch input::placeholder {
+  color: #022d4d;
+  opacity: 0.7;
+}
+.searchProject .inputSearch i {
+  position: absolute;
+  right: 15px;
+  font-size: 17px;
+  color: #022d4d;
+}
+.searchProject .button_submit {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: 15px;
+}
+.searchProject .button_submit button {
+  cursor: pointer;
+  width: 65px;
+  height: 38px;
+  font-size: 15px;
+  background: #fff;
+  outline: 0;
+  border: 1px solid #022d4d;
+}
+.searchProject .button_submit a {
+  cursor: pointer;
+  width: 65px;
+  height: 38px;
+  font-size: 15px;
+  background: #fff;
+  outline: 0;
+  color: #022d4d;
+  border: 1px solid #022d4d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchProject .button_submit a:hover, .searchProject .button_submit a:active {
+  color: #022d4d;
+}
+.searchProject form {
+  display: flex;
+}
+
+.section__projects {
+  margin-top: 30px;
+}
+.section__projects__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section__projects__item {
+  width: calc(33.3333333333% - 10px);
+  margin-right: 15px;
+  position: relative;
+  z-index: 9;
+  padding: 15px;
+  background: #e6f3fc;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.section__projects__item__name {
+  font-size: 1.7rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.section__projects__item .select {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  color: #e5bd40;
+  font-size: 20px;
+}
+.section__projects__item .buttonstatus {
+  border-radius: 100px;
+}
+.section__projects__item .description {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.section__projects__item .listmembers {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section__projects__item .listmembers a {
+  display: flex;
+  margin-right: 3px;
+}
+.section__projects__item .listmembers .others {
+  position: absolute;
+  right: 15px;
+  color: #022D4D;
+}
+.section__projects__item a {
+  z-index: 9999;
+}
+.section__projects__item:last-child {
+  margin-right: 0;
+}
+
+.section__milestonesmeeting {
+  margin-top: 30px;
+}
+.section__milestonesmeeting__milestones__content .schedule-month {
+  color: #022d4d;
+  opacity: 0.7;
+}
+.section__milestonesmeeting__milestones__content .schedule-text::after {
+  content: ".";
+  color: #000;
+  display: inline-block;
+  margin-left: 8px;
+  position: relative;
+  top: -4px;
+}
+.section__milestonesmeeting__milestones__content img {
+  margin-top: 20px;
+}
+
+.notes .pastmeetingnotes {
+  margin-top: 30px;
+  margin-bottom: 140px;
+}
+.notes .pastmeetingnotes__content {
+  position: relative;
+}
+.notes .pastmeetingnotes__list--meeting {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.notes .pastmeetingnotes__list--meeting--item {
+  width: calc(50% - 8px);
+  height: 115px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #cfaa40;
+  border-radius: 10px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.notes .pastmeetingnotes__list--meeting--item .date {
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  margin-bottom: 1.4rem;
+}
+.notes .pastmeetingnotes__list--meeting--item .time {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.notes .pastmeetingnotes__list--meeting--item:nth-child(even) {
+  margin-right: 0;
+}
+.notes .pastmeetingnotes__list--notes--item {
+  border-radius: 10px;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  margin-top: 12px;
+  padding: 15px;
+  background: rgba(0, 128, 221, 0.2392156863);
+}
+.notes .pastmeetingnotes__list--notes--item:first-child {
+  margin-top: 20px;
+}
+.notes .pastmeetingnotes__list--notes--item .title__notes {
+  font-size: 16px;
+  font-weight: 600;
+}
+.notes .pastmeetingnotes__list--notes--item .title__notes a {
+  color: black;
+}
+.notes .pastmeetingnotes__list--notes--item .date {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 600;
+}
+.notes .pastmeetingnotes__list--notes--item p.content {
+  color: #022d4d;
+  max-height: 60px;
+  overflow: hidden;
+  opacity: 0.7;
+  margin-top: 12px;
+  line-height: 17px;
+}
+
+.section__statisticsnotes {
+  margin-top: 3rem;
+}
+.section__statisticsnotes__statistics__wrap {
+  height: 100%;
+}
+
+.section__customlink {
+  margin-top: 30px;
+  margin-bottom: 140px;
+}
+.section__customlink__itemcontent__description {
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 1.2rem 0 2rem;
+}
+.section__customlink__itemcontent .title_box {
+  font-size: 2rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.section__customlink__itemcontent .button__interlink {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #fff;
+  background: #022d4d;
+  text-transform: uppercase;
+}
+.section__customlink__itemcontent .button__interlink span {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .ListProjects {
+    flex-direction: column;
+  }
+  .ListProjects .itemProject {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .ListProjects .itemProject:last-child {
+    margin-bottom: 0;
+  }
+
+  .milestones {
+    margin-bottom: 2rem;
+  }
+
+  .CustomInterlink .ItemCustomInterlink:last-child {
+    margin-top: 2rem;
+  }
+
+  .searchProject .inputSearch {
+    width: 100%;
+  }
+
+  .content__LeftPastMeeting {
+    margin-top: 2rem;
+  }
+
+  .contentItemInterlink .nameInterlink,
+.Notes .titlebox,
+.process__statistic__wrap .title h4,
+.boxMilestones__MeetingSchedule .contentBoxMeetings .title_boxMeetings,
+.boxMilestones__MeetingSchedule .schedule-demo span,
+.contentListProjects .titlebox {
+    font-size: 1.6rem;
+  }
+
+  .boxMilestones__MeetingSchedule .itemMeeting .titleMeeting {
+    font-size: 1.4rem;
+  }
+}/*# sourceMappingURL=project.css.map */

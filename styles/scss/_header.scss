@@ -1,0 +1,344 @@
+#header {
+  //Main Header
+
+  .logoHeaderMenu,
+  #btn-menu-responsive {
+    /*Hide on desktop*/
+    display: none;
+  }
+
+
+  .header__top{
+    border-bottom: 1px solid rgba(2,45,77,0.1);
+  }
+  .header__container {
+    @extend %d-flex;
+    align-items: center;
+    height: 70px;
+    background: $white;
+    position: relative;
+    z-index: 10;
+
+    .header__main {
+      @extend %d-flex;
+      width: 100%;
+      align-items: center;
+    }
+
+    .logoHeader {
+      img {
+        max-height: 60px;
+        width: auto;
+        display: block;
+      }
+    }
+
+    .nav {
+      &__left {
+        padding-left: 120px;
+      }
+
+      &__right {
+        margin-left: auto;
+        @extend %d-flex;
+        justify-content: flex-end;
+        margin-right: 15px;
+      }
+
+      &__list {
+        @extend %d-flex;
+
+        li {
+          margin-right: 35px;
+
+          a {
+            font-family: $fontCarosMedium;
+            color:#022d4d;
+          }
+
+          &.active {
+            a {
+              color: $secondaryColor;
+            }
+          }
+
+          &:hover {
+            a {
+              color: $secondaryColor;
+            }
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .account {
+      &__group {
+        @include flex-width(40px);
+        margin-left: auto;
+      }
+
+      &__avatar {
+        cursor: pointer;
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          display: block;
+        }
+      }
+
+      &__listItem {
+        display: none;
+      }
+    }
+  }
+
+  //End Main Header
+
+
+
+  //Btn Responsive
+  #btn-menu-responsive {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    z-index: 999;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: $black;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .change {
+    .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-5px, 8px);
+      transform: rotate(-45deg) translate(-5px, 8px);
+    }
+
+    .bar2 {
+      opacity: 0;
+    }
+
+    .bar3 {
+      -webkit-transform: rotate(45deg) translate(-3px, -7px);
+      transform: rotate(45deg) translate(-3px, -7px);
+    }
+  }
+
+  //End Btn Responsive
+}
+
+@include desktop1200 {
+  #header {
+    .header__container {
+      .nav {
+        &__right {
+          @include flex-width(55%);
+        }
+      }
+    }
+  }
+}
+
+@include desktop1024 {
+  #header {
+    .header__container {
+      .nav {
+        &__left {
+          padding-left: 50px;
+        }
+      }
+    }
+  }
+}
+
+@include tablet980 {
+  #header {
+    .header__container {
+      .nav {
+        &__right {
+          @include flex-width(70%);
+        }
+      }
+    }
+    .header__search {
+      height: auto;
+      padding: 10px 0;
+      .search {
+        &__wrap {
+          flex-wrap: wrap;
+        }
+        &__box {
+          width: 100%;
+        }
+        &__item {
+          margin: 5px;
+        }
+        &__list {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 5px -5px 0 -5px;
+        }
+      }
+    }
+  }
+}
+
+@include tablet768 {
+  #header {
+    .header__container {
+      height: 50px;
+
+      .logoHeader {
+        img {
+          max-height: 40px;
+        }
+      }
+
+      .nav {
+        &__left {
+          padding-left: 20px;
+        }
+
+        &__right {
+          margin: 0 -15px;
+          max-width: 100%;
+          flex: inherit;
+          justify-content: start;
+        }
+
+        &__list {
+          li {
+            margin-right: 20px;
+
+            a {
+              font-size: 1.2rem;
+            }
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      .account {
+        &__group {
+          margin-left: auto;
+        }
+
+        &__avatar {
+          cursor: pointer;
+
+          img {
+            width: 35px;
+            height: 35px;
+          }
+        }
+
+        &__listItem {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include mobile480 {
+  #header {
+    .logoHeaderMenu,
+    #btn-menu-responsive {
+      /*Show on Mobile*/
+      display: block;
+    }
+
+    .header__container {
+      margin: 0 -15px;
+      padding: 0 15px;
+      .header__main {
+        display: block;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        position: fixed;
+        height: 100%;
+        width: 70vw;
+        transform: translateX(-100%);
+        max-width: 300px;
+        background: $white;
+        @include transition(0.3s);
+        top: 0;
+        left: 0;
+        z-index: 9;
+
+        .nav {
+          &__left,
+          &__right {
+            padding: 0;
+            margin: 0;
+          }
+
+          &__list {
+            flex-wrap: wrap;
+
+            li {
+              width: 100%;
+              margin: 0;
+              border-bottom: 1px solid #e7e7e7;
+
+              &.logoHeaderMenu {
+                margin: 0;
+
+                img {
+                  height: 100px;
+                  width: auto;
+                  display: table;
+                  margin: 20px auto;
+                }
+              }
+
+              a {
+                display: block;
+                padding: 15px 25px;
+                font-size: 1.6rem;
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+        .account {
+          &__group {
+            margin-left: auto;
+          }
+
+          &__avatar {
+            cursor: pointer;
+
+            img {
+              width: 35px;
+              height: 35px;
+            }
+          }
+
+          &__listItem {
+            display: none;
+          }
+        }
+        &.active {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}

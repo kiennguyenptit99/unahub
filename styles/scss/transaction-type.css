@@ -1,0 +1,289 @@
+.select__content .btn-submit span,
+.select__content .btn-submit a, .select__content .btn-submit {
+  transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+}
+
+.select__content .btn-submit {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background: #022d4d;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.select__content .btn-submit:after, .select__content .btn-submit:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 50%;
+  width: 0;
+  background: #005391;
+  opacity: 0.6;
+  transition: width 0.3s ease-in-out;
+}
+.select__content .btn-submit:before {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.select__content .btn-submit span,
+.select__content .btn-submit a {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  padding: 10px 30px;
+  display: block;
+  color: #fff;
+}
+.select__content .btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+.select__content .btn-submit:hover span {
+  color: #fff;
+}
+.select__content .btn-submit:hover:after, .select__content .btn-submit:hover:before {
+  width: 100%;
+}
+
+.section__titlepage {
+  margin: 40px 0;
+}
+.section__titlepage span {
+  font-size: 4rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  color: #000;
+  border-bottom: 5px solid #88a6b5;
+}
+@media (max-width: 1200px) {
+  .section__titlepage {
+    margin-bottom: 3rem;
+  }
+  .section__titlepage span {
+    font-size: 3rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+@media (max-width: 768px) {
+  .section__titlepage {
+    margin-bottom: 2.6rem;
+  }
+  .section__titlepage span {
+    font-size: 2.4rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+
+/*Mixin Responsive*/
+.select__content .btn-submit, .select__content .btn-submit span,
+.select__content .btn-submit a {
+  transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+}
+
+.select__content .btn-submit {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background: #022d4d;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.select__content .btn-submit:after, .select__content .btn-submit:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 50%;
+  width: 0;
+  background: #005391;
+  opacity: 0.6;
+  transition: width 0.3s ease-in-out;
+}
+.select__content .btn-submit:before {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.select__content .btn-submit span,
+.select__content .btn-submit a {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  padding: 10px 30px;
+  display: block;
+  color: #fff;
+}
+.select__content .btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+.select__content .btn-submit:hover span {
+  color: #fff;
+}
+.select__content .btn-submit:hover:after, .select__content .btn-submit:hover:before {
+  width: 100%;
+}
+
+.section__titlepage {
+  margin: 40px 0;
+}
+.section__titlepage span {
+  font-size: 4rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  color: #000;
+  border-bottom: 5px solid #88a6b5;
+}
+@media (max-width: 1200px) {
+  .section__titlepage {
+    margin-bottom: 3rem;
+  }
+  .section__titlepage span {
+    font-size: 3rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+@media (max-width: 768px) {
+  .section__titlepage {
+    margin-bottom: 2.6rem;
+  }
+  .section__titlepage span {
+    font-size: 2.4rem;
+    border-bottom: 3px solid #88a6b5;
+  }
+}
+
+.select__transaction {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  background-color: #b2b2b2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 300ms;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.select__transaction.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.select-close {
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: #b2b2b2;
+}
+
+.select__content {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 1.6rem 2.6rem;
+  max-width: 34rem;
+  position: absolute;
+  z-index: 101;
+}
+.select__content h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cfaa40;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+.select__content h3 span {
+  font-size: 1.8rem;
+  color: #022d4d;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+}
+.select__content h3 i {
+  color: #000;
+}
+.select__content .select__description {
+  font-size: 1.3rem;
+  font-family: "Caros", Arial, Helvetica, sans-serif;
+  margin: 2.2rem 0;
+}
+.select__content .select__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.select__content .select__list .select__item {
+  margin-bottom: 1.2rem;
+  border-radius: 20px;
+  border: 2px solid #cfaa40;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 250ms;
+}
+.select__content .select__list .select__item:hover {
+  background-color: #cfaa40;
+}
+.select__content .select__list .select__item:hover h4,
+.select__content .select__list .select__item:hover p {
+  color: #fff;
+}
+.select__content .select__list .select__item:last-child {
+  margin-bottom: 0;
+}
+.select__content .select__list .select__item h4 {
+  margin: 0 0 1.4rem;
+  font-family: "Caros-Bold", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+}
+.select__content .select__list .select__item p {
+  margin-bottom: 0;
+  font-family: "Caros", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+.select__content .select__list .select__item.active {
+  background-color: #cfaa40;
+}
+.select__content .select__list .select__item.active h4,
+.select__content .select__list .select__item.active p {
+  color: #fff;
+}
+.select__content .btn-submit {
+  margin: 24px auto 0;
+  display: block;
+}
+.select__content .btn-submit span {
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 10px 45px;
+}
+.select__content .btn-submit.disabled {
+  background-color: #e7ecf0;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.select__content .btn-submit.disabled:after, .select__content .btn-submit.disabled::before {
+  display: none;
+}/*# sourceMappingURL=transaction-type.css.map */
